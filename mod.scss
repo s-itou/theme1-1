@@ -1,0 +1,5260 @@
+//akibare-dental demosite
+
+$baseColor: #fbf7eb;
+$subColor: #aaaaaa;
+
+
+$BoxBGColor: #fbf6e9;
+//「bgcolor」と異なる色（強調する背景など）
+$BoxBGColor2: #F1F8FF;
+
+//線の色
+$BorderColor: #dedad1;
+
+
+//キャプションの背景色
+$CaptionColor: #F9F4E3;
+
+
+//サイドボックスなど、見出しパーツを使わない　見出しの背景色。
+$titleBGColor: #1f55c1;
+//「titleBGColor」が背景の場合の文字色。
+$titleFontColor: #ffffff;
+
+
+//文字色
+$baseFontColor: #333333;
+//全体の文字サイズ
+$baseFontSize_L: 18px;
+$baseFontSize_M: 15px;
+$baseFontSize_S: 12px;
+
+
+//gnaviのリンク色
+$BGOverFontColor: #74533e;
+
+$linkColor: #0099cc;
+
+//メインエリア、サブエリアのサイズ
+$baseMainWidth: 730px;
+$baseSideWidth: 220px;
+
+//CV：グリーン
+$BoxBGColor_G: #edfaf7; //薄い緑
+$BorderColor_G: #cce0dc; //やや薄い緑
+$sideLinkHover_G: #86bfac; //サイドメニューのホバー やや濃い緑
+$titleColor1_G: #71a090; //濃い緑
+$titleColor2_G: #4976d1; //青色
+$titleColor3_G: #3d997a; //H1の色
+
+
+
+
+
+
+//
+
+html {}
+
+.mod-body {
+  background: #ffffff;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  word-wrap: break-word;
+  margin: 0;
+  font-size: $baseFontSize_M;
+}
+
+.mod-margin-bottom1 {
+  margin-bottom: 15px;
+}
+.mod-margin-bottom2 {
+  margin-bottom: 30px;
+}
+.mod-margin-bottom3 {
+  margin-bottom: 45px;
+}
+
+.mod-image {
+   img {
+    vertical-align: bottom;
+  }
+}
+
+
+/* ------------------
+★★ .mod-2col
+-------------------*/
+/* mod-2col-1a */
+.mod-2col-1a {
+    width: $baseMainWidth - 10;
+    margin: 0 auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+
+    .area-side-left & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+
+    .mod-col {
+      width: 155px;
+      float: left;
+      margin : 0 15px 15px 0;
+
+      .area-side-right & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+
+      .area-side-left & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+
+      img {
+        width: 155px;
+
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+    .mod-col2 {
+      width: $baseMainWidth - 190;
+      float: right;
+
+      .area-side-right & {
+        width: $baseSideWidth - 125;
+        float: right;
+      }
+      .area-side-left & {
+        width: $baseSideWidth - 125;
+        float: right;
+      }
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+
+
+
+/* mod-2col-1b */
+.mod-2col-1b {
+    width: $baseMainWidth - 10;
+    margin: 0 auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+    .area-side-left & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+
+    .mod-col {
+      width: 155px;
+      float: right;
+      margin: 0 0 15px 15px;
+
+      .area-side-right & {
+        width: 90px;
+        float: right;
+        margin : 0 0 15px 15px;
+      }
+
+      .area-side-left & {
+        width: 90px;
+        float: right;
+        margin : 0 0 15px 15px;
+      }
+
+      img {
+        width: 155px;
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+    .mod-col2 {
+      width: $baseMainWidth - 190;
+      float: left;
+        .area-side-right & {
+        width: $baseSideWidth - 125;
+        float: left;
+        }
+        .area-side-left & {
+        width: $baseSideWidth - 125;
+        float: left;
+        }
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+        .mod-feature-item1 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_01.png") no-repeat left top;
+        }
+        .mod-feature-item2 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_02.png") no-repeat left top;
+        }
+        .mod-feature-item3 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_03.png") no-repeat left top;
+        }
+        .mod-feature-item4 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_04.png") no-repeat left top;
+        }
+        .mod-feature-item5 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_05.png") no-repeat left top;
+        }
+        .mod-feature-item6 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_06.png") no-repeat left top;
+        }
+        .mod-feature-item7 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_07.png") no-repeat left top;
+        }
+        .mod-feature-item8 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_08.png") no-repeat left top;
+        }
+        .mod-feature-item9 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_09.png") no-repeat left top;
+        }
+        .mod-feature-item10 & {
+          width: 440px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_10.png") no-repeat left top;
+        }
+
+    }
+}
+
+
+
+
+/* mod-2col-1b-2  写真サイズ違い（200px）*/
+.mod-2col-1b-2 {
+    margin: 0;
+
+    .mod-col {
+      width: 200px;
+      float: right;
+      margin: 0 0 0 15px;
+
+      img {
+        width: 200px;
+      }
+    }
+    .mod-col2 {
+      overflow: hidden;
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+
+
+/* mod-2col-1c */
+.mod-2col-1c {
+    width: $baseMainWidth - 10;
+    margin: 0 auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+    .area-side-left & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+    .mod-col {
+      width: 155px;
+      float: left;
+      margin: 0 15px 15px 0;
+
+      .area-side-right & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+      .area-side-left & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+      img {
+        width: 155px;
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+
+    .mod-col2 {
+      .area-side-right & {}
+      .area-side-left & {}
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            width: $baseSideWidth - 135;
+            margin-left: 105px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+}
+
+/* mod-2col-1d */
+.mod-2col-1d {
+    width: $baseMainWidth - 10;
+    margin: 0px auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+    .area-side-left & {
+      width: $baseSideWidth - 10;
+      margin: 0 auto;
+    }
+    .mod-col {
+      width: 200px;
+      float: right;
+      margin: 0px 0 15px 15px;
+
+      .mod-image {
+        img{
+          width: 200px;
+        }
+      }
+    }
+    .area-side-right & {
+      width: 90px;
+      float: right;
+      margin : 0 0 15px 15px;
+    }
+    .area-side-left & {
+      width: 90px;
+      float: right;
+      margin : 0 0 15px 15px;
+    }
+    img {
+      width: 200px;
+      .area-side-right & {
+        width: 90px;
+      }
+      .area-side-left & {
+        width: 90px;
+      }
+    }
+    .mod-col2 {
+      padding: 0 0 0 0;
+
+      .area-side-right & {}
+      .area-side-left & {}
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            width: $baseSideWidth - 135;
+            margin-right: 105px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+        .mod-feature-item1 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_01.png") no-repeat left top;
+        }
+        .mod-feature-item2 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_02.png") no-repeat left top;
+        }
+        .mod-feature-item3 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_03.png") no-repeat left top;
+        }
+        .mod-feature-item4 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_04.png") no-repeat left top;
+        }
+        .mod-feature-item5 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_05.png") no-repeat left top;
+        }
+        .mod-feature-item6 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_06.png") no-repeat left top;
+        }
+        .mod-feature-item7 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_07.png") no-repeat left top;
+        }
+        .mod-feature-item8 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_08.png") no-repeat left top;
+        }
+        .mod-feature-item9 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_09.png") no-repeat left top;
+        }
+        .mod-feature-item10 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_10.png") no-repeat left top;
+        }
+    }
+}
+
+/* mod-2col-1e */
+.mod-2col-1e {
+    width: $baseMainWidth - 22;
+    margin: 0 auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 22;
+      margin: 0 auto;
+    }
+    .area-side-left & {
+      width: $baseSideWidth - 22;
+      margin: 0 auto;
+    }
+
+    .mod-col {
+      width: 155px;
+      float: left;
+      margin : 0 15px 15px 0;
+
+      .area-side-right & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+      .area-side-left & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+      img {
+        width: 155px;
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+    .mod-col2 {
+      width: $baseMainWidth - 192;
+      float: right;
+
+      .area-side-right & {
+        width: $baseSideWidth - 127;
+        float: right;
+      }
+      .area-side-left & {
+        width: $baseSideWidth - 127;
+        float: right;
+      }
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+}
+
+/* mod-2col-1f */
+.mod-2col-1f {
+    width: $baseMainWidth - 22;
+    margin: 0 auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 22;
+      margin: 0 auto;
+    }
+    .area-side-left & {
+      width: $baseSideWidth - 22;
+      margin: 0 auto;
+    }
+    .mod-col {
+      width: 155px;
+      float: right;
+      margin : 0 0 15px 15px;
+
+      .area-side-right & {
+        width: 90px;
+        float: right;
+        margin : 0 0 15px 15px;
+      }
+      .area-side-left & {
+        width: 90px;
+        float: right;
+        margin : 0 0 15px 15px;
+      }
+      img {
+        width: 155px;
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+
+    .mod-col2 {
+      width: $baseMainWidth - 192;
+      float: left;
+
+      .area-side-right & {
+        width: $baseSideWidth - 127;
+        float: left;
+      }
+      .area-side-left & {
+        width: $baseSideWidth - 127;
+        float: left;
+      }
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+        .mod-feature-item1 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_01.png") no-repeat left top;
+        }
+        .mod-feature-item2 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_02.png") no-repeat left top;
+        }
+        .mod-feature-item3 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_03.png") no-repeat left top;
+        }
+        .mod-feature-item4 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_04.png") no-repeat left top;
+        }
+        .mod-feature-item5 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_05.png") no-repeat left top;
+        }
+        .mod-feature-item6 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_06.png") no-repeat left top;
+        }
+        .mod-feature-item7 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_07.png") no-repeat left top;
+        }
+        .mod-feature-item8 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_08.png") no-repeat left top;
+        }
+        .mod-feature-item9 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_09.png") no-repeat left top;
+        }
+        .mod-feature-item10 & {
+          width: 438px;
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_10.png") no-repeat left top;
+        }
+
+    }
+}
+
+/* mod-2col-1g */
+.mod-2col-1g {
+    width: $baseMainWidth - 22;
+    margin: 0 auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 22;
+      margin: 0 auto;
+    }
+    .area-side-left & {
+      width: $baseSideWidth - 22;
+      margin: 0 auto;
+    }
+    .mod-col {
+      width: 155px;
+      float: left;
+      margin: 0 15px 15px 0;
+
+      .area-side-right & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+      .area-side-left & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+      img {
+        width: 155px;
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+
+    .mod-col2 {
+      padding: 0 0 0 0;
+      .area-side-right & {}
+      .area-side-left & {}
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            width: $baseSideWidth - 135;
+            margin-left: 105px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+}
+
+/* mod-2col-1h */
+.mod-2col-1h {
+    width: $baseMainWidth - 22;
+    margin: 5px auto;
+
+    .area-side-right & {
+      width: $baseSideWidth - 22;
+      margin: 5px auto;
+    }
+    .area-side-left & {
+      width: $baseSideWidth - 22;
+      margin: 5px auto;
+    }
+
+    .mod-col {
+      width: 155px;
+      float: right;
+      margin: 0 0 15px 15px;
+
+      .area-side-right & {
+        width: 90px;
+        float: right;
+        margin : 0 0 15px 15px;
+      }
+      .area-side-left & {
+        width: 90px;
+        float: right;
+        margin : 0 0 15px 15px;
+      }
+      img {
+        width: 155px;
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+    .mod-col2 {
+        .area-side-right & {}
+        .area-side-left & {}
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            width: $baseSideWidth - 135;
+            margin-right: 105px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+        .mod-feature-item1 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_01.png") no-repeat left top;
+        }
+        .mod-feature-item2 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_02.png") no-repeat left top;
+        }
+        .mod-feature-item3 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_03.png") no-repeat left top;
+        }
+        .mod-feature-item4 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_04.png") no-repeat left top;
+        }
+        .mod-feature-item5 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_05.png") no-repeat left top;
+        }
+        .mod-feature-item6 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_06.png") no-repeat left top;
+        }
+        .mod-feature-item7 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_07.png") no-repeat left top;
+        }
+        .mod-feature-item8 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_08.png") no-repeat left top;
+        }
+        .mod-feature-item9 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_09.png") no-repeat left top;
+        }
+        .mod-feature-item10 & {
+          padding-left: 80px;
+          background: url("img/mod-step/ico_step_10.png") no-repeat left top;
+        }
+    }
+}
+
+
+
+
+/* mod-2col-2a */
+.mod-2col-2a {
+    width: $baseMainWidth - 12;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 340px;
+      float: left;
+    }
+    .mod-col2 {
+      width: 340px;
+      float: right;
+    }
+}
+
+
+/* mod-2col-3a */
+.mod-2col-3a {
+    width: 340px;
+    margin: 0 auto;
+
+    .mod-col-i {
+      width: 155px;
+      float: left;
+      margin-right:5px;
+
+      img {
+        width: 155px;
+      }
+    }
+    .mod-col2-i {
+      width: 170px;
+      padding: 0 0 0 0;
+      float: right;
+    }
+}
+
+/* mod-2col-3b */
+.mod-2col-3b {
+    width: 340px;
+    margin: 0 auto;
+
+    .mod-col-i {
+      width: 155px;
+      float: right;
+      margin: 0 0 15px 15px;
+
+      img {
+        width: 155px;
+      }
+    }
+    .mod-col2-i {
+      width: 170px;
+      padding: 0 0 0 0;
+      float: left;
+    }
+}
+
+
+/* mod-2col-3c */
+.mod-2col-3c {
+    width: 340px;
+    margin: 0 auto;
+
+    .mod-col-i {
+      width: 155px;
+      float: left;
+      margin: 0 15px 15px 0;
+
+      img {
+        width: 155px;
+      }
+    }
+
+    .mod-col2-i {
+      padding: 0 0 0 0;
+    }
+}
+
+
+/* mod-2col-3d */
+.mod-2col-3d {
+    width: 340px;
+    margin: 0 auto;
+
+    .mod-col-i {
+      width: 155px;
+      float: right;
+      margin: 0 0 15px 15px;
+
+      img {
+        width: 155px;
+      }
+    }
+    .mod-col2-i {
+      padding: 0 0 0 0;
+    }
+}
+
+/* mod-2col-4a */
+.mod-2col-4a {
+    width: 365px;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 170px;
+      float: left;
+      margin: 0 15px 0 0;
+
+      img {
+        width: 170px;
+      }
+    }
+    .mod-col2 {
+      width: 170px;
+      float: right;
+      margin: 0 0 0 10px;
+
+      img {
+        width: 170px;
+      }
+    }
+}
+
+/* mod-2col-4b */
+.mod-2col-4b {
+    width: 400px;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 170px;
+      border: 1px solid $BorderColor;
+      float: left;
+      margin: 0 10px 0 0;
+      padding: 10px 9px 0 9px;
+
+      .sibl2-inner {
+        width: 170px;
+        margin: 0 auto;
+
+        img {
+        width: 170px;
+        }
+      }
+      .sibl3-inner {
+        width: 170px;
+        margin: 0 auto;
+
+        img {
+        width: 170px;
+        }
+      }
+    }
+    .mod-col2 {
+      width: 170px;
+      border: 1px solid $BorderColor;
+      float: right;
+      margin: 0 0 0 10px;
+      padding: 10px 9px 0 9px;
+
+      .sibl2-inner {
+        width: 170px;
+        margin: 0 auto;
+
+        img {
+        width: 170px;
+        }
+      }
+      .sibl3-inner {
+        width: 170px;
+        margin: 0 auto;
+
+        img {
+        width: 170px;
+        }
+      }
+    }
+}
+
+
+
+
+
+/* mod-2col-5a */
+.mod-2col-5a {
+    width: 170px;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 90px;
+      float: left;
+      margin-right:10px;
+
+      img {
+        width: 90px;
+      }
+    }
+    .mod-col2 {
+      width: 70px;
+      padding: 0;
+      float: right;
+    }
+}
+
+/* mod-2col-5b */
+.mod-2col-5b {
+    width: $baseSideWidth - 10;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 90px;
+      float: right;
+      margin: 0 0 15px 15px;
+
+      img {
+        width: 90px;
+      }
+    }
+    .mod-col2 {
+      width: $baseSideWidth - 130;
+      padding: 0;
+      float: left;
+    }
+}
+
+
+
+
+
+/* ------------------
+★★ .mod-3col
+-------------------*/
+
+/* mod-3col-1a */
+.mod-3col-1a {
+    width: $baseMainWidth;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 220px;
+      float: left;
+      margin-right: 20px;
+
+      .sibl2-inner {
+        width: 200px;
+        margin: 0 auto;
+
+        img {
+          width : 200px;
+        }
+      }
+      .sibl3-inner {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+    .mod-col2 {
+      width: 220px;
+      float: left;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      .sibl2-inner {
+        width: 200px;
+        margin: 0 auto;
+
+        img {
+          width : 200px;
+        }
+      }
+      .sibl3-inner {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+    .mod-col3 {
+      width: 220px;
+      float: right;
+      margin-left: 20px;
+
+
+      .sibl2-inner {
+        width: 200px;
+        margin: 0 auto;
+
+        img {
+          width : 200px;
+        }
+      }
+      .sibl3-inner {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+}
+
+
+
+
+/* mod-3col-1b */
+.mod-3col-1b {
+    width: $baseMainWidth;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 200px;
+      border: 1px solid $BorderColor;
+      float: left;
+      margin-right: 20px;
+      padding: 10px 9px 0 9px;
+
+      .sibl2-inner {
+        width: 200px;
+        margin: 0 auto;
+
+        img {
+          width : 200px;
+        }
+      }
+      .sibl3-inner {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+    .mod-col2 {
+      width: 200px;
+      border: 1px solid $BorderColor;
+      float: left;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 10px 9px 0 9px;
+
+      .sibl2-inner {
+        width: 200px;
+        margin: 0 auto;
+
+        img {
+          width : 200px;
+        }
+      }
+      .sibl3-inner {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+    .mod-col3 {
+      width: 200px;
+      border: 1px solid $BorderColor;
+      float: right;
+      margin-left: 20px;
+      padding: 10px 9px 0 9px;
+
+      .sibl2-inner {
+        width: 200px;
+        margin: 0 auto;
+
+        img {
+          width : 200px;
+        }
+      }
+      .sibl3-inner {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+}
+
+/* ------------------
+★★ .mod-4col
+-------------------*/
+
+.mod-4col-1a {
+    width: $baseMainWidth;
+    margin: 0 auto;
+
+    .mod-col {
+      width: 170px;
+      float: left;
+      margin-left: 10px;
+      margin-right: 5px;
+
+      img {
+        width : 170px;
+      }
+    }
+    .mod-col2 {
+      width: 170px;
+      float: left;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      img {
+        width : 170px;
+      }
+    }
+    .mod-col3 {
+      width: 170px;
+      float: left;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      img {
+        width : 170px;
+      }
+    }
+    .mod-col4 {
+      width: 170px;
+      float: right;
+      margin-left: 5px;
+      margin-right: 10px;
+
+      img {
+        width : 170px;
+      }
+    }
+
+}
+
+/* ------------------
+★★ .mod-box(Main)
+-------------------*/
+
+/* mod-box */
+.mod-box {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: $baseMainWidth;
+}
+
+/* mod-box2 背景色のみ*/
+.mod-box2 {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: $BoxBGColor;
+    width: $baseMainWidth;
+}
+
+/* mod-box3 borderのみ*/
+.mod-box3 {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: auto;
+}
+
+/* mod-box4 背景色＋border*/
+.mod-box4 {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    width: $baseMainWidth - 2;
+    border: 1px solid $BorderColor;
+}
+
+/* mod-box5  背景に模様付*/
+.mod-box5 {
+    margin-right: auto;
+    margin-left: auto;
+    width: $baseMainWidth;
+    border: none;
+    background: url("img/mod-box/bg05.png") no-repeat right bottom;
+    h1,h2,h3,h4,h5,h6{
+      margin-top: 0;
+    }
+    .mod-2col-1d{
+      .mod-col{
+        .sibl-inner{
+          .mod-image{
+            img{
+              width:200px;
+            }
+          }
+        }
+      }
+    }
+}
+
+/* mod-box6 背景にテクスチャ付*/
+.mod-box6 {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    width: $baseMainWidth - 30;
+    border: none;
+    background: url("img/mod-box/bg06.png") repeat 0 0;
+    h1,h2,h3,h4,h5,h6{
+      margin-top: 0;
+    }
+}
+
+/* ------------------
+★★ .mod-box7 イラスト付背景（代表者挨拶に使用）
+-------------------*/
+.mod-box7{
+    background: url("img/area-main/bg02.png") no-repeat right bottom #ffffff;
+}
+
+/* mod-box8 背景にテクスチャ付*/
+.mod-box8 {
+    width: $baseMainWidth - 40;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 19px;
+    border: 1px solid #fdadad;
+    border-radius: 5px;    /* CSS3草案 */
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 5px;   /* Firefox用 */
+    background: url("img/mod-box/bg08.png") repeat 0 0;
+    h1,h2,h3,h4,h5,h6{
+      margin-top: 0;
+    }
+}
+
+
+/* ------------------
+★★ .mod-side-box
+-------------------*/
+
+/* mod-side-box */
+.mod-side-box {
+    margin: 0 auto 20px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: $baseSideWidth;
+}
+
+
+/* mod-side-box4 */
+.mod-side-box4 {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: $BoxBGColor;
+    width: $baseSideWidth;
+}
+
+/* mod-side-box3 */
+.mod-side-box3 {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid $BorderColor;
+    background-color: $BoxBGColor;
+    width: auto;
+}
+
+/* mod-side-box2 */
+.mod-side-box2 {
+    margin: 0 auto 20px;
+    padding: 5px;
+    border: 1px solid $BorderColor;
+    width: $baseSideWidth - 2;
+}
+
+
+/* ------------------
+★★ .mod-h
+-------------------*/
+
+/* mod-h1 */
+.mod-h1{
+  margin-bottom: 20px;
+
+  .mod-h-inner {
+    border-top : 4px solid #f2c72a;
+    border-bottom : 1px dotted #dcd4c0;
+    padding: 5px 0 2px 0px;
+
+    h1,h2,h3,h4,h5,h6 {
+      color: #ff9000;
+      font-size: $baseFontSize_L + 7;
+      font-weight: normal;
+      margin :0;
+      width : auto;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        h1,h2,h3,h4,h5,h6 {
+         text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* mod-h2 */
+.mod-h2{
+  margin-bottom: 20px;
+
+  .mod-h-inner {
+    background: url("img/mod-h2/bg.png") no-repeat left 8px;
+    padding: 5px 0 0 48px;
+    border-bottom: 1px solid #dedad1;
+
+    h1,h2,h3,h4,h5,h6 {
+      color: #3c0103;
+      font-size: $baseFontSize_L + 7;
+      font-weight: normal;
+      margin :0;
+      width : auto;
+
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        h1,h2,h3,h4,h5,h6 {
+         text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+/* mod-h3 */
+.mod-h3{
+  margin-bottom: 15px;
+
+  .mod-h-inner {
+    background: url("img/mod-h3/bg.png") no-repeat left 5px;
+    padding: 5px 0 2px 31px;
+
+    h1,h2,h3,h4,h5,h6 {
+      color: #3c0103;
+      font-size: $baseFontSize_L + 2;
+      font-weight: normal;
+      margin :0;
+      width : auto;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        h1,h2,h3,h4,h5,h6 {
+         text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* mod-h4 */
+.mod-h4{
+  margin-bottom: 9px;
+
+  .mod-h-inner {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin : 0;
+    padding-bottom: 8px;
+    background: url("img/mod-h4/bg.png") no-repeat right bottom;
+
+    h1,h2,h3,h4,h5,h6 {
+      display: inline;
+      color: #ee8585;
+      font-size: $baseFontSize_L;
+      font-weight: bold;
+      border-left : 4px solid #ee8585;
+      margin :0;
+      padding: 0 18px;
+      width : auto;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        h1,h2,h3,h4,h5,h6 {
+         text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+/* mod-h5 */
+.mod-h5{
+  margin-bottom: 8px;
+
+  .mod-h-inner {
+    background: url("img/mod-h5/bg.png") no-repeat left 11px;
+    padding: 5px 0 5px 15px;
+
+    h1,h2,h3,h4,h5,h6 {
+      color: #3c0103;
+      font-size: $baseFontSize_L - 1;
+      font-weight: normal;
+      margin :0;
+      width : auto;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        h1,h2,h3,h4,h5,h6 {
+         text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+/* mod-h6 */
+.mod-h6{
+  margin-bottom: 20px;
+
+  .mod-h-inner {
+    border-top : 4px solid #f2c72a;
+    border-bottom : 1px dotted #dcd4c0;
+    background: url("img/mod-h1/bg.png") no-repeat left 8px;
+    padding: 5px 0 2px 35px;
+
+    h1,h2,h3,h4,h5,h6 {
+      color: #ff9000;
+      font-size: $baseFontSize_L + 7;
+      font-weight: normal;
+      margin :0;
+      width : auto;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        h1,h2,h3,h4,h5,h6 {
+         text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+/* mod-h6-green */
+.mod-h6{
+  .mod-h-inner-green {
+    border-top : 4px solid $titleColor3_G;
+    border-bottom : 1px dotted #dcd4c0;
+    background: url("img/mod-h1/mod-h1-green/bg.png") no-repeat left 8px;
+    padding: 5px 0 2px 35px;
+
+    h1,h2,h3,h4,h5,h6 {
+      color: $titleColor3_G;
+      font-size: $baseFontSize_L + 7;
+      font-weight: normal;
+      margin :0;
+      width : auto;
+    }
+
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        h1,h2,h3,h4,h5,h6 {
+         text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* /例外(検討) float要素の下に見出しが入る状態回避 */
+.mod-2col-1c, .mod-2col-1g {
+
+  .mod-col2 {
+
+    .mod-h1, .mod-h2, .mod-h3, mod-h4, mod-h5, mod-h6, mod-h7, {
+      width: $baseMainWidth - 190;
+      margin-left: 170px;
+
+      .mod-side-box & {
+        width: $baseSideWidth - 125;
+        margin-left: 105px;
+      }
+      .mod-side-box2 & {
+        width: $baseSideWidth - 125;
+        margin-left: 105px;
+      }
+      .mod-side-box3 & {
+        width: $baseSideWidth - 125;
+        margin-left: 105px;
+      }
+      .mod-side-box4 & {
+        width: $baseSideWidth - 125;
+        margin-left: 105px;
+      }
+    }
+  }
+}
+
+.mod-2col-1d, .mod-2col-1h {
+
+  .mod-col2 {
+
+    .mod-h1, .mod-h2, .mod-h3, mod-h4, mod-h5, mod-h6, mod-h7, {
+      width: $baseMainWidth - 190;
+      .mod-side-box & {
+        width: $baseSideWidth - 125;
+      }
+      .mod-side-box2 & {
+        width: $baseSideWidth - 125;
+      }
+      .mod-side-box3 & {
+        width: $baseSideWidth - 125;
+      }
+      .mod-side-box4 & {
+        width: $baseSideWidth - 125;
+      }
+    }
+  }
+}
+
+.mod-2col-3c {
+
+  .mod-col2-i {
+
+    .mod-h1, .mod-h2, .mod-h3, mod-h4, mod-h5, mod-h6, mod-h7, {
+    width : 170px;
+    margin-left: 170px;
+    }
+  }
+}
+
+.mod-2col-3d {
+
+  .mod-col2-i {
+
+    .mod-h1, .mod-h2, .mod-h3, mod-h4, mod-h5, mod-h6, mod-h7, {
+    width : 170px;
+    }
+  }
+}
+
+.mod-listbox {
+
+  .sibl-inner {
+
+    .mod-h1, .mod-h2, .mod-h3, mod-h4, mod-h5, mod-h6, mod-h7, {
+      width : $baseMainWidth - 22;
+      .mod-side-box & {
+        width: $baseSideWidth - 32;
+      }
+    }
+  }
+}
+
+
+/* ------------------
+★★ .mod-wysiwyg
+-------------------*/
+
+/* mod-wysiwyg */
+.mod-wysiwyg {
+  margin-bottom: 10px;
+
+  .mod-wysiwyg-inner {
+
+    p {
+      color: $baseFontColor;
+      font-size: $baseFontSize_M;
+      line-height: 1.5;
+      margin: 17px 0 0;
+    }
+    a {
+      color: $linkColor;
+      font-size: $baseFontSize_M;
+    }
+    img {
+      width: auto;
+    }
+    li {
+      font-size: $baseFontSize_M;
+    }
+    *:first-child {
+      margin-top: 0;
+
+    }
+  }
+}
+
+/* mod-wysiwyg2 */
+.mod-wysiwyg2 {
+  margin-bottom: 10px;
+
+  .mod-wysiwyg-inner {
+
+    p {
+      color: $baseFontColor;
+      font-size: $baseFontSize_M;
+      line-height: 1.5;
+      background-color: $CaptionColor;
+      margin: 17px 0 0;
+      padding: 2px;
+    }
+    a {
+      color: $linkColor;
+    }
+    img {
+      width: auto;
+    }
+    li {
+      font-size: $baseFontSize_M;
+    }
+    *:first-child {
+      margin-top: 0;
+
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-link
+-------------------*/
+
+
+.mod-link {
+  .mod-link-inner {
+    p {
+      margin: 0.5em 0 0.3em;
+      padding: 0;
+      line-height: 1.4;
+    }
+    a {
+      color: $linkColor;
+      background: url("img/mod-arr/arr.png") no-repeat left 4px;
+      padding-left: 20px;
+    }
+  }
+}
+
+
+/* ------------------
+★★ .mod-tel
+-------------------*/
+
+
+.mod-tel {
+  .mod-tel-inner {
+    p {
+      margin: 0.5em 0 0.3em;
+      font-size: $baseFontSize_L;
+      padding: 0;
+      line-height: 1.4;
+      text-align: center;
+    }
+  }
+}
+
+
+
+/* ------------------
+★★ .mod-image
+-------------------*/
+
+.mod-image {
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.mod-imagebox {
+  text-align: center;
+  img{
+    width: 100%;
+  }
+}
+
+.mod-imagebox2 {
+  text-align: center;
+  img{
+    width: 80%;
+  }
+}
+
+.mod-imagebox3 {
+  text-align: center;
+  img{
+    width: 60%;
+  }
+}
+
+.area-header-inner, .area-footer-inner{
+  .mod-imagebox-inner {
+    background: url("img/area-header/bg02.png") no-repeat center top #ffffff;
+    .sibl{
+      width: 980px;
+      margin: auto;
+    }
+  }
+}
+
+/*緑のカラバリ用*/
+.area-header-inner, .area-footer-inner{
+  .green{
+    .mod-imagebox-inner {
+    background: url("img/area-header-green/bg02.png") no-repeat center top #ffffff;
+    .sibl{
+      width: 980px;
+      margin: auto;
+    }
+  }
+}
+}
+
+
+/* ------------------
+★★ .clearfix
+-------------------*/
+
+.clearfix {
+    zoom: 1;
+    &:before{
+      content: "";
+      display: table;
+    }
+    &:after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+/* ------------------
+★★ .mod-gnavi
+-------------------*/
+.mod-gnav {
+  font-size: $baseFontSize_M - 1;
+  padding: 0;
+  line-height: 1.3;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #e5e5e5;
+  background: #f9f3e2 url("img/mod-gnav/bg.png") repeat-x top left ;
+}
+
+.mod-gnav-inner {
+  width:980px;
+  margin: 0 auto;
+  padding: 2px 0;
+  ul {
+    display: table;
+    width: 978px;
+    margin: 0;
+    padding: 0;
+    background: url("img/mod-gnav/bg03.png") no-repeat right 50% transparent;
+    li {
+      display: table-cell;
+      *float: left;
+      vertical-align: middle;
+      padding: 1px 2px 0px 4px;
+      text-align: center;
+      list-style: none;
+      background: url("img/mod-gnav/bg03.png") no-repeat left 50% transparent;
+
+      a {
+        display: inline-block;
+        *display: inline;    /* IE用 */
+        *zoom : 1;    /* IE用 */
+        color: $BGOverFontColor;
+        font-weight: bold;
+        text-decoration: none;
+        background: url("img/mod-gnav/bg02.png") no-repeat 10px 48%;
+        padding: 20px 15px 19px 20px;
+
+        &:hover {
+          background: #e5dac6 url("img/mod-gnav/bg02.png") no-repeat 10px 48%;
+          border-radius: 3px;    /* CSS3草案 */
+          -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+          -moz-border-radius: 3px;   /* Firefox用 */
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-gnavi-green
+-------------------*/
+.mod-gnav-green {
+  font-size: $baseFontSize_M;
+  padding: 0;
+  line-height: 1.3;
+  margin-left: auto;
+  margin-right: auto;
+  border-top:1px solid $BorderColor_G;
+  background: $BoxBGColor_G url("img/mod-gnav-green/bg.png") repeat-x bottom left ;
+}
+
+.mod-gnav-green-inner {
+  width:980px;
+  margin: 0 auto;
+  padding: 1px 0;
+  background: url(img/mod-gnav-green/bg04.png) no-repeat bottom left;
+  ul {
+    display: table;
+    width: 980px;
+    margin: 0;
+    padding: 0;
+    background: url(img/mod-gnav-green/bg03.png) repeat-y top left;
+
+    li {
+      display: table-cell;
+      *float: left;
+      vertical-align: middle;
+      padding:　0;
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      background: url(img/mod-gnav-green/bg03.png) repeat-y top right;
+      &:hover {
+          background: $BoxBGColor_G url("img/mod-gnav-green/bg_hover.png") no-repeat top right;
+          text-decoration: none;
+        }
+     p{
+        margin: 0;
+      }
+
+      a {
+        display: inline-block;
+        *display: inline;    /* IE用 */
+        *zoom : 1;    /* IE用 */
+        color: $titleColor1_G;
+        font-weight: normal;
+        font-size: $baseFontSize_M ;
+        text-decoration: none;
+        margin: 0px;
+        padding: 20px 0px;
+        width: 100%;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/* ------------------
+★★ .mod-list
+-------------------*/
+
+.mod-list {
+
+  .mod-list-inner {
+
+    ul {
+      padding-left: 0;
+      li {
+        padding-top: 2px;
+        padding-left:20px;
+        list-style-type: none;
+        background: url("img/mod-list/ico.png") no-repeat left center;
+
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* ------------------
+★★ mod-2col-1f-2  mod-2col-1f　の写真幅を　　155px　→　200px　　に変更
+-------------------*/
+
+.mod-2col-1f-2 {
+  width: $baseMainWidth - 22;
+  margin: 0 auto;
+  .mod-col {
+    width: 200px;
+    float: right;
+    margin: 0 0 15px 15px;
+
+    img {
+      width: 200px;
+    }
+  }
+  .mod-col2 {
+    width: 490px;
+    float: left;
+  }
+}
+
+/* ------------------
+★★ mod-2col-1f-3  mod-2col-1f　の写真幅を　　155px　→　300px　　に変更
+-------------------*/
+
+.mod-2col-1f-3 {
+  .mod-col {
+    width: 300px;
+    float: right;
+    margin: 0 0 15px 15px;
+
+    img {
+      width: 300px;
+    }
+  }
+  .mod-col2 {
+    overflow: hidden;
+  }
+}
+
+/* ------------------
+.mod-inquerybox
+-------------------*/
+/* .mod-inquery */
+
+.mod-inquery{
+  .mod-list{
+    .mod-list-inner{
+      ul{
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+/* mod-.mod-inquerybox */
+
+
+.mod-inquerybox {
+  background: none;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 470px;
+  text-align: center;
+
+  .mod-inquerybox-inner {
+    .sibl {
+      background: #6085d0;
+      color: #ffffff;
+      padding: 10px 0;
+      border-top-left-radius: 5px;       /* CSS3 */
+      border-top-right-radius: 5px;       /* CSS3 */
+      -moz-border-radius-topleft: 5px;    /*firefox用*/
+      -moz-border-radius-topright: 5px;   /*firefox用*/
+      -webkit-border-top-left-radius: 5px;    /* Safari,Google Chrome用 */
+      -webkit-border-top-right-radius: 5px;    /* Safari,Google Chrome用 */
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .mod-inquerybox-inner2 {
+    border: 1px solid $BorderColor;
+    padding: 15px 0;
+    .sibl2 {
+      width: 300px;
+      margin: 0 auto;
+      .mod-tel-inner{
+        background: url("img/mod-tel/ico02.png") no-repeat left 6px;
+        padding: 0 0 0 20px;
+        p {
+          margin: 0;
+          color: #e96666;
+          font-weight: normal;
+          font-size: $baseFontSize_L + 15;
+        }
+      }
+    }
+    .sibl3{
+      padding-top: 5px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+/* mod-2col-1b
+.mod-inquerybox2　内の　mod-2col-1b　幅を　　500px　　に変更
+*/
+
+/* ------------------
+.mod-inquerybox2
+-------------------*/
+
+/* mod-.mod-inquerybox2 */
+
+.mod-inquerybox2 {
+  border: 1px solid $BorderColor;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 10px 10px 10px;
+  width: 508px;
+  .mod-2col-1b {
+    width: 488px;
+    margin: 0 auto;
+    .mod-col {
+      width: 155px;
+      float: right;
+      margin: 0 0 15px 15px;
+      img {
+        width: 155px;
+      }
+    }
+    .mod-col2 {
+      width: 318px;
+      padding: 0;
+      float: left;
+      .sibl2-inner {
+        .mod-wysiwyg-inner {
+          p {
+            font-weight: bold;
+            font-size: $baseFontSize_L;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ------------------------
+★★ .mod-side-menu
+------------------------ */
+
+.mod-side-menubox{
+  padding: 0 0 18px;
+  background: url("img/mod-sub-menu/bg02.png") no-repeat bottom center;
+  ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mod-side-menubox-inner{
+    padding: 17px 9px 5px 9px;
+    background: url("img/mod-sub-menu/bg.png") no-repeat top left;
+    color: #f16d0b;
+    font-size: $baseFontSize_L;
+
+
+    .sibl{
+      border-bottom: 1px solid #ffffff;
+      p{
+        margin:0;
+      }
+      .sibl-inner{
+        padding: 0 0 5px 25px;
+        border-bottom: 1px solid #dcd4c0;
+        background: url("img/mod-sub-menu/bg03.png") no-repeat left 3px;
+      }
+    }
+  }
+  .mod-side-menubox-inner2{
+    padding-bottom: 5px;
+    border-left: 1px solid $BorderColor;
+    border-right: 1px solid $BorderColor;
+    background: #fbf6e9;
+    .mod-side-menu-list{
+      .mod-side-menu-item{
+        margin: 5px 9px;
+        &:first-child {
+            margin-top: 0;
+          }
+        a{
+          display: block;
+          zoom:1; /*Ie7ハック*/
+          padding: 9px 10px 7px 25px;
+          background: url("img/mod-sub-menu/arr.png") no-repeat 8px 15px #ffffff;
+          border-right: 1px solid #b2b2b2;
+          border-bottom: 1px solid #b2b2b2;
+          border-radius: 3px;        /* CSS3草案 */
+          -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+          -moz-border-radius: 3px;   /* Firefox用 */
+          color: #2f141c;
+          &:hover {
+            border-top: 1px solid #ab9d7b;
+            border-right: none;
+            border-bottom: none;
+            border-left: 1px solid #ab9d7b;
+            background: url("img/mod-sub-menu/arr_hover.png") no-repeat 8px 14px #cbbb92;
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+      .mod-side-menu-list{
+        ul{
+          li{
+            list-style: none;
+            .mod-side-menu-item{
+             a {
+                background: url("img/mod-sub-menu/arr02.png") no-repeat 15px 11px;
+                border-top: none;
+                border-right: none;
+                border-bottom: 1px dotted #cccccc;
+                border-left: none;
+                border-radius: 0;
+                color: #2f141c;
+                display: block;
+                padding: 4px 10px 6px 25px;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------
+★★ .mod-side-menu-green
+------------------------ */
+.mod-side-menubox-green{
+  padding: 0 0 18px;
+  background: url("img/mod-sub-menu/bg02.png") no-repeat bottom center;
+  ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mod-side-menubox-inner{
+    padding: 17px 9px 5px 9px;
+    background: url("img/mod-sub-menu-green/bg.png") no-repeat top left;
+    color: $titleColor2_G;
+    font-size: $baseFontSize_L;
+
+
+    .sibl{
+      border-bottom: 1px solid #ffffff;
+      p{
+        margin:0;
+      }
+      .sibl-inner{
+        padding: 0 0 5px 35px;
+        border-bottom: 1px solid $BorderColor_G;
+
+        background: url("img/mod-sub-menu-green/bg03.png") no-repeat left 3px;
+      }
+    }
+  }
+  .mod-side-menubox-inner2{
+    padding-bottom: 5px;
+    border-left: 1px solid $BorderColor_G;
+    border-right: 1px solid $BorderColor_G;
+    background: $BoxBGColor_G;
+    .mod-side-menu-list{
+      .mod-side-menu-item{
+        margin: 5px 9px;
+        &:first-child {
+            margin-top: 0;
+          }
+        a{
+          display: block;
+          zoom:1; /*Ie7ハック*/
+          padding:  9px 10px 7px 25px;
+          background: url("img/mod-sub-menu-green/arr.png") no-repeat 8px 14px #ffffff;
+          border-right: 1px solid #b2b2b2;
+          border-bottom: 1px solid #b2b2b2;
+          border-radius: 3px;        /* CSS3草案 */
+          -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+          -moz-border-radius: 3px;   /* Firefox用 */
+          color: $titleColor1_G;
+          &:hover {
+            border-top: 1px solid $titleColor1_G;
+            border-right: none;
+            border-bottom: none;
+            border-left: 1px solid $titleColor1_G;
+            background: url("img/mod-sub-menu-green/arr_hover.png") no-repeat 8px 15px $sideLinkHover_G;
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+      .mod-side-menu-list{
+        ul{
+          li{
+            list-style: none;
+            .mod-side-menu-item{
+             a {
+                background: url("img/mod-sub-menu-green/arr02.png") no-repeat 15px 11px;
+                border-top: none;
+                border-right: none;
+                border-bottom: 1px dotted #cccccc;
+                border-left: none;
+                border-radius: 0;
+                color: $titleColor1_G;
+                display: block;
+                padding: 4px 10px 6px 25px;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------
+★★ .mod-side-menu2
+------------------------ */
+
+.mod-side-menubox2{
+  padding: 0 0 18px;
+  background: url("img/mod-sub-menu/bg02.png") no-repeat bottom center;
+  .mod-side-menubox2-inner{
+    padding: 17px 5px 5px 5px;
+    background: url("img/mod-sub-menu/bg.png") no-repeat top left;
+    color: #f16d0b;
+    font-size: $baseFontSize_L;
+    .mod-side-menu-list2{
+      border-bottom: 1px solid #ffffff;
+      p{
+        margin:0;
+      }
+      .mod-side-menu-list2-inner{
+        padding: 0 0 5px 25px;
+        border-bottom: 1px solid #dcd4c0;
+        background: url("img/mod-sub-menu/bg03.png") no-repeat left 3px;
+      }
+    }
+  }
+  .mod-side-menubox-inner2{
+    padding: 0 9px 5px;
+    border-left: 1px solid $BorderColor;
+    border-right: 1px solid $BorderColor;
+    background: #fbf6e9;
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        display: block;
+        min-height: 34px;
+        padding: 10px 0 0 25px;
+        background: url("img/mod-sub-menu/arr.png") no-repeat 8px 15px #ffffff;
+        border-right: 1px solid #b2b2b2;
+        border-bottom: 1px solid #b2b2b2;
+        border-radius: 3px;        /* CSS3草案 */
+        -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+        -moz-border-radius: 3px;   /* Firefox用 */
+        margin: 0 0 5px;
+        a{
+          *display: inline;
+          *zoom: 1;
+          width: 174px;
+          color: #2f141c;
+          display: inline-block;
+        }
+        &:hover {
+            background: url("img/mod-sub-menu/arr_hover.png") no-repeat 8px 15px #cbbb92;
+            color: #ffffff;
+            border-top: 1px solid #ab9d7b;
+            border-right: none;
+            border-bottom: none;
+            border-left: 1px solid #ab9d7b;
+            a{
+           color: #ffffff;
+            text-decoration: none;
+            }
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* ------------------
+★★ .mod-side-inquiry
+-------------------*/
+
+/* mod-side-inquiry-1a */
+.mod-side-inquiry-1a {
+    width: $baseSideWidth - 10;
+    margin: 0 auto;
+
+    .sibl-inner {
+
+      img {
+        width: 170px;
+      }
+    }
+}
+
+/* mod-side-inquiry-1b */
+.mod-side-inquiry-1b {
+    width: $baseSideWidth - 10;
+    margin: 0 auto;
+}
+
+
+/* ------------------
+★★ .mod-listbox
+-------------------*/
+
+/* mod-listbox */
+
+.mod-listbox {
+  .mod-list{
+    width: $baseMainWidth - 22;
+    .mod-side-box & {
+      width: $baseSideWidth - 22;
+    }
+  }
+  .sibl-inner{
+    padding: 10px;
+    border: 1px solid $BorderColor;
+    background-color: $BoxBGColor;
+  }
+}
+
+
+
+/* ------------------
+★★ .mod-requestbox
+-------------------*/
+
+/* mod-requestbox */
+.mod-requestbox {
+  width: 400px;
+  background-color: $BoxBGColor;
+  border: 1px solid $BorderColor;
+  margin: 20px auto;
+  padding: 25px;
+}
+
+/* ------------------
+★★ .mod-step-text
+-------------------*/
+
+.mod-step-text-item {
+  .mod-2col-1a,.mod-2col-1b,.mod-2col-1c,.mod-2col-1d{
+    border-bottom: 1px dotted $BorderColor;
+    margin-bottom: 30px;
+  }
+}
+.mod-feature-item1,.mod-feature-item2,.mod-feature-item3,.mod-feature-item4,.mod-feature-item5,.mod-feature-item6,.mod-feature-item7,.mod-feature-item8,.mod-feature-item9,.mod-feature-item10 {
+  .mod-2col-1a,.mod-2col-1b,.mod-2col-1c,.mod-2col-1d{
+    border-bottom: 1px dotted $BorderColor;
+    margin-bottom: 30px;
+  }
+}
+
+/* mod-step-text2 */
+.mod-step-text2 {
+    margin: 0 auto 20px;
+    padding: 0;
+    width: $baseMainWidth - 2;
+    border: 1px solid $BorderColor;
+}
+
+
+/* ------------------
+★★ .mod-step-flow
+-------------------*/
+
+.mod-step-flow {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    margin-top: 20px;
+    padding-top: 40px;
+    background: url(img/mod-step/arw_down_gray_grade.jpg) center top no-repeat;
+    &.step1 {
+      margin-top: 0;
+      padding-top: 0;
+      background: none;
+    }
+    .mod-step-flow-inner2{
+      padding-left: 100px;
+      &.step1 {background: url(img/mod-step/ico_step_01.png) left top no-repeat;}
+      &.step2 {background: url(img/mod-step/ico_step_02.png) left top no-repeat;}
+      &.step3 {background: url(img/mod-step/ico_step_03.png) left top no-repeat;}
+      &.step4 {background: url(img/mod-step/ico_step_04.png) left top no-repeat;}
+      &.step5 {background: url(img/mod-step/ico_step_05.png) left top no-repeat;}
+      &.step6 {background: url(img/mod-step/ico_step_06.png) left top no-repeat;}
+      &.step7 {background: url(img/mod-step/ico_step_07.png) left top no-repeat;}
+      &.step8 {background: url(img/mod-step/ico_step_08.png) left top no-repeat;}
+      &.step9 {background: url(img/mod-step/ico_step_09.png) left top no-repeat;}
+      &.step10 {background: url(img/mod-step/ico_step_10.png) left top no-repeat;}
+      .mod-box4 {
+        padding: 10px;
+        width: 618px;
+        .mod-2col-1f{
+          width: 100%;
+          .mod-col2 {
+            width: 430px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------------------------
+   .mod-fnav　フッターナビ
+------------------------- */
+.mod-fnav {
+  background:#063ca9;
+  .mod-fnav-inner {
+    margin:0 auto;
+    padding:5px 0;
+    width: 980px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline;
+      padding: 0 6px 0 11px;
+      text-align: left;
+      background: url("img/area-footer/line01.png") center left no-repeat;
+
+      &:first-child {
+      padding: 0 6px 0 10px;
+        background: none;
+
+      }
+      a {
+        color: #ffffff;
+        font-size: $baseFontSize_S + 1;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-header-add, ヘッダー自由記入欄（2行）
+-------------------*/
+.mod-header-add,{
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 980px;
+  .mod-header-add-inner{
+    .sibl{
+      float: left;
+      font-size: $baseFontSize_S + 1;
+      line-height: 120%;
+      padding-left: 10px;
+      padding-right: 30px;
+      width:43%;
+    }
+    .sibl2{
+      float: right;
+      font-size: $baseFontSize_S + 1;
+      line-height: 120%;
+      padding-left: 30px;
+      padding-right: 10px;
+      width: 43%;
+     }
+  }
+}
+
+/* --------------------------------------------
+★★ .mod-header-add, ヘッダー自由記入欄（1行）
+   -------------------------------------- */
+.mod-header-add2,{
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  .mod-footer-add-inner2{}
+}
+
+/* ------------------
+★★ .mod-footer-add,　フッター自由記入欄
+-------------------*/
+.mod-footer-add{
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .mod-footer-add-inner{
+    .sibl{
+      float: left;
+      line-height: 120%;
+      padding-left: 10px;
+      padding-right: 30px;
+      width: 43%;
+        .sibl-inner p{
+          font-size: $baseFontSize_S + 1;
+        }
+    }
+    .sibl2{
+      float: right;
+      line-height: 120%;
+      padding-left: 30px;
+      padding-right: 10px;
+      width: 43%;
+        .sibl2-inner p{
+          font-size: $baseFontSize_S + 1;
+        }
+     }
+  }
+}
+
+
+/* --------------------------------------------
+★★ .mod-footer-add, フッター自由記入欄（1行）
+   -------------------------------------- */
+.mod-footer-add2{
+  padding: 10px;
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-footer-add-inner2{}
+}
+
+
+/* ------------------
+★★ .mod-faqbox よくあるご質問。
+-------------------*/
+
+.mod-faqbox{
+  .mod-faqbox-text{
+    .mod-faqbox-text-inner{
+      margin-bottom: 20px;
+    }
+  }
+  .mod-faqbox-text-inner2{
+    padding: 0 10px 0 10px;
+    .mod-q {
+      margin-bottom:10px;
+      .mod-q-inner {
+        background: url(img/mod-faq/ico-q.png) no-repeat left top;
+        padding: 0 10px 0 70px;
+        margin: 0 0 30px 0;
+        .sibl p{
+          font-size: $baseFontSize_L;
+          font-weight: bold;
+        }
+      }
+    }
+    .mod-a{
+      .mod-a-inner{
+        background: url(img/mod-faq/ico-a.png) no-repeat left top;
+        padding: 0 10px 0 70px;
+        margin: 0 0 30px 0;
+        .sibl p {
+          font-size: $baseFontSize_L;
+          font-weight: bold;
+        }
+      }
+    }
+    .mod-2col-1d {
+      width: 100%;
+      .mod-col2 {
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-faqbox2 よくあるご質問。
+-------------------*/
+
+.mod-faqbox2{
+  .mod-faqbox-text{
+    .mod-faqbox-text-inner{
+      margin-bottom: 20px;
+    }
+  }
+  .mod-faqbox-text-inner2{
+    padding: 0 10px 0 10px;
+    .mod-q {
+      margin-bottom:10px;
+      background: $BoxBGColor2;
+      padding: 10px;
+      .mod-q-inner {
+        background: url(img/mod-faq/ico-q.png) no-repeat left top;
+        padding: 0 10px 0 70px;
+        margin: 0 0 30px 0;
+        .sibl p{
+          font-size: $baseFontSize_L;
+          font-weight: bold;
+        }
+      }
+    }
+    .mod-a{
+      background: $BoxBGColor;
+      padding: 10px;
+      .mod-a-inner{
+        background: url(img/mod-faq/ico-a.png) no-repeat left top;
+        padding: 0 10px 0 70px;
+        margin: 0 0 30px 0;
+        .sibl p {
+          font-size: $baseFontSize_L;
+          font-weight: bold;
+        }
+      }
+    }
+    .mod-2col-1d {
+      width: 100%;
+      .mod-col2 {
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-faqbox3 よくあるご質問。
+-------------------*/
+
+.mod-faqbox3{
+  .mod-faqbox-text{
+    .mod-faqbox-text-inner{
+      margin-bottom: 20px;
+    }
+  }
+  .mod-faqbox-text-inner2{
+    padding: 0 10px 0 10px;
+    .mod-q {
+      margin-bottom:10px;
+      background: $BoxBGColor2;
+      padding: 10px;
+      .mod-q-inner {
+        background: url(img/mod-faq/ico-q.png) no-repeat left top;
+        padding: 0 10px 0 70px;
+        margin: 0 0 30px 0;
+        .sibl p{
+          font-size: $baseFontSize_L;
+          font-weight: bold;
+        }
+      }
+    }
+    .mod-a{
+      background: none;
+      padding: 10px;
+      .mod-a-inner{
+        background: url(img/mod-faq/ico-a.png) no-repeat left top;
+        padding: 0 10px 0 70px;
+        margin: 0 0 30px 0;
+        .sibl p {
+          font-size: $baseFontSize_L;
+          font-weight: bold;
+        }
+      }
+    }
+    .mod-2col-1d {
+      width: 100%;
+      .mod-col2 {
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-accessbox
+-------------------*/
+.mod-accessbox{
+  .mod-accessbox-inner{
+    .mod-tel{
+      background: url(img/mod-tel/ico02.png) no-repeat left top;
+      padding: 2px 0 0 35px;
+      margin: 0 0 20px 0;
+    }
+    .mod-tel p{
+      color: #f08a8a;
+      text-align: left;
+      margin: 0;
+    }
+  }
+  .mod-accessbox-inner2{
+    margin: 0 auto;
+    width: 650px;
+  }
+}
+/* ------------------
+★★ .mod-insidebox  ボックス記事
+-------------------*/
+.mod-insidebox{
+  .mod-insidebox-inner{}
+  .mod-insidebox-inner2{
+    .sibl{
+      padding: 0px 5px 5px 5px;
+    }
+  }
+}
+/* ------------------
+★★ .mod-insidebox2
+-------------------*/
+.mod-insidebox2{
+  .mod-insidebox2-inner{
+    background-color: $BoxBGColor;
+    padding: 5px 10px;
+  }
+  .mod-insidebox2-inner2{
+    .sibl{
+      padding: 0px 5px 5px 5px;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-insidebox3
+-------------------*/
+.mod-insidebox3{
+  .mod-insidebox3-inner{
+    padding: 5px 10px;
+
+    /*角丸設定*/
+    border-radius-top-left: 5px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-topleft: 5px;    /*firefox用--*/
+    -moz-border-radius-topright: 5px;   /*firefox用--*/
+    -webkit-border-top-left-radius: 5px;    /* Safari,Google Chrome用 */
+    -webkit-border-top-right-radius: 5px;    /* Safari,Google Chrome用 */
+    border-top: solid 1px #3c66ba;
+    border-left: solid 1px #3c66ba;
+    border-right: solid 1px #3c66ba;
+
+    background: url("img/area-main/mod-insidebox/bg.png") repeat-x top left #3c66ba;
+      h1, h2, h3, h4, h5, h6{
+        margin: 0;
+        padding: 0 0 0 47px;
+        background: url("img/area-main/mod-insidebox/ico.png") no-repeat top left;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: $baseFontSize_L + 2;
+      }
+    }
+  .mod-insidebox3-inner2 {
+    border: solid 1px #3c66ba;
+    padding: 20px 20px 20px 25px;
+    .mod-wysiwyg{
+      margin-bottom: 0;
+    }
+  }
+}
+/* --------------------------------------------------------------------------
+   .mod-title　ヘッダータイトル
+-------------------------------------------------------------------------- */
+.mod-titlebar{
+  .mod-titlebar-inner{
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 10px 10px 10px;
+  }
+  .mod-titlebar-inner2{
+    background: url("img/mod-titlebar/bg.png") no-repeat top left;
+    float: left;
+    padding: 0 10px 0 30px;
+    height: 113px;
+    width: 400px;
+
+    .sibl-inner{
+      font-size: $baseFontSize_S;
+      padding: 20px 0 0 0;
+    }
+    .sibl-inner2{
+      color: #fd930a;
+      font-size: $baseFontSize_L + 7;
+      font-weight: bold;
+    }
+  }
+  .mod-titlebar-inner3{
+    background: none;
+    float: right;
+    width: 240px;
+    padding:5px 10px 5px 10px;
+    margin-top: 30px;
+    .sibl-inner{
+      background: #063ca9;
+      color: #ffffff;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;    /* Safari,Google Chrome用 */
+      -moz-border-radius: 15px;   /* Firefox用 */
+      font-size: $baseFontSize_S + 1;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .sibl-inner2{
+      background: none;
+      padding: 5px 10px 5px 0;
+      .tel-box{
+        background: url("img/mod-tel/ico02.png") no-repeat 0 4px;
+        color: #fd930a;
+        font-size: $baseFontSize_L + 8;
+        font-weight: normal;
+        padding: 0 0 0 38px;
+
+      }
+      .text-box{
+        font-size: $baseFontSize_S + 1;
+      }
+    }
+    .sibl-inner3{
+      font-size: $baseFontSize_S + 1;
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   .mod-title　ヘッダータイトル2 （ロゴが入っているバージョン）
+-------------------------------------------------------------------------- */
+
+.mod-titlebar2{
+  p{
+    margin: 0;
+  }
+  .mod-titlebar2-inner{
+    padding:0 10px;
+    width: 980px;
+    margin: 0 auto;
+  }
+  .mod-titlebar2-inner2{
+    background: url("img/mod-titlebar/bg.png") no-repeat top left;
+    float:left;
+    padding: 0 10px 10px 10px;
+    height: 113px;
+    width: 395px;
+    text-align: center;
+    .mod-logo{
+      padding:15px 0 0 0;
+      line-height: 1;
+      img{
+        width: 60px;
+      }
+    }
+    .mod-title-text{
+      color: #f89c24;
+      font-size: $baseFontSize_L + 8;
+      font-weight: bold;
+      padding: 0 0 10px 0;
+      a {
+      color: #f89c24;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
+  .mod-titlebar2-inner3{
+    background: none;
+    float: right;
+    width: 245px;
+    padding:5px 0px 5px 0px;
+    margin-top: 38px;
+
+    .sibl-inner{
+      width: 236px;
+      margin: 0 auto;
+      background: #063ca9;
+      color: #ffffff;
+      padding: 2px 0;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;    /* Safari,Google Chrome用 */
+      -moz-border-radius: 15px;   /* Firefox用 */
+      font-size: $baseFontSize_M;
+      text-align: center;
+    }
+
+    .sibl-inner2{
+      background: none;
+      .tel-box{
+        color: #fd930a;
+        font-size: $baseFontSize_L + 8;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+/* ------------------
+★★ .mod-comparisonbox  背景色なし　比較記事用パーツ
+-------------------*/
+.mod-comparisonbox{
+  .mod-comparisonbox-inner{
+    float: left;
+    max-width:320px;
+    padding: 0 10px 0 0 ;
+    .sibl{
+      padding: 10px;
+      .sibl-inner{
+        padding:0 0 10px 0;
+      }
+      .sibl-inner2{}
+    }
+  }
+  .mod-comparisonbox-inner2{
+    float: left;
+    max-width:320px;
+    background: url(img/mod-arr/arr_big_r.png) no-repeat 0px 40%;
+    padding: 0 0 0 30px ;
+    .sibl{
+      padding: 10px;
+      .sibl-inner{
+        padding:0 0 10px 0;
+      }
+    }
+    .sibl-inner2{}
+  }
+}
+/* ------------------
+★★ .mod-comparisonbox2
+-------------------*/
+.mod-comparisonbox2{
+  .mod-comparisonbox2-inner{
+    float: left;
+    max-width:320px;
+    padding: 0 10px 0 0 ;
+    .sibl{
+      background: $BoxBGColor;
+      padding: 10px;
+      .sibl-inner{
+        padding:0 0 10px 0;
+      }
+      .sibl-inner2{}
+    }
+  }
+  .mod-comparisonbox2-inner2{
+    float: left;
+    max-width:320px;
+    background: url(img/mod-arr/arr_big_r.png) no-repeat 0px 40%;
+    padding: 0 0 0 30px ;
+    .sibl{
+      background: $BoxBGColor;
+      padding: 10px;
+    }
+    .sibl-inner{
+      padding:0 0 10px 0;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-comparisonbox3
+-------------------*/
+.mod-comparisonbox3{
+  .mod-comparisonbox3-inner{
+    float: left;
+    max-width:320px;
+    padding: 0 10px 0 0 ;
+    .sibl{
+      background: $BoxBGColor;
+      padding: 10px;
+      .sibl-inner{
+        width: 300px;
+        margin: 0 auto;
+        padding: 0 0 10px 0;
+        .sibl-inner-i{
+          width: 140px;
+          float: left;
+          padding: 0 10px 0 0 ;
+          img{
+            width: 140px;
+          }
+        }
+        .sibl-inner-i2{
+          width: 140px;
+          float: left;
+          padding: 0 0 0 10px ;
+          img{
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+  .mod-comparisonbox3-inner2{
+    float: left;
+    max-width:320px;
+    background: url(img/mod-arr/arr_big_r.png) no-repeat 0px 40%;
+    padding: 0 0 0 30px ;
+    .sibl{
+      background: $BoxBGColor;
+      padding: 10px;
+      .sibl-inner{
+        width: 300px;
+        margin: 0 auto;
+        padding: 0 0 10px 0;
+        .sibl-inner-i{
+          width: 140px;
+          float: left;
+          padding: 0 10px 0 0 ;
+          img{
+            width: 140px;
+          }
+        }
+        .sibl-inner-i2{
+          width: 140px;
+          float: left;
+          padding: 0 0 0 10px ;
+          img{
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-step-flow-02
+-------------------*/
+.mod-step-flow-02 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    margin-top: 20px;
+    padding-top: 40px;
+    background: url(img/mod-step/arw_down_gray_grade.jpg) center top no-repeat;
+    &.step1 {
+      margin-top: 0;
+      padding-top: 0;
+      background: none;
+    }
+    .mod-box-inner{
+      padding-left: 100px;
+      &.step1 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_01.png) left top no-repeat;}
+      &.step2 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_02.png) left top no-repeat;}
+      &.step3 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_03.png) left top no-repeat;}
+      &.step4 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_04.png) left top no-repeat;}
+      &.step5 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_05.png) left top no-repeat;}
+      &.step6 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_06.png) left top no-repeat;}
+      &.step7 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_07.png) left top no-repeat;}
+      &.step8 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_08.png) left top no-repeat;}
+      &.step9 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_09.png) left top no-repeat;}
+      &.step10 {background: url(img/mod-step/mod-step-flow-02/ico_step_d1_10.png) left top no-repeat;}
+    }
+  }
+}
+
+
+/* ------------------
+★★ .mod-form
+-------------------*/
+.mod-form{
+  .mod-form-item{
+    background: #fffdf5;
+    border-top: 1px solid $BoxBGColor;
+    border-left: 1px solid $BoxBGColor;
+    border-right: 1px solid $BoxBGColor;
+    font-size: $baseFontSize_M;
+    overflow: hidden;
+    /*\*/
+    zoom:1;
+    /*\*/
+    width: 690px;
+    .mod-form-label {
+      .mod-form-name{
+        display: inline-block;
+        color: #333333;
+        float: left;
+        font-weight:bold;
+        padding: 5px 5px 5px 5px;
+        width: 145px;
+      }
+    }
+    .mod-form-part-text{
+      background: #fffdf5;
+      display: inline-block;
+      width: 505px;
+      padding: 10px 10px 10px 20px;
+      float: left;
+      input{
+        width: 490px;
+      }
+    }
+    .mod-form-part-textarea{
+      display: inline-block;
+      background: #fffdf5;
+      width: 505px;
+      padding: 10px 10px 10px 20px;
+      float: left;
+      textarea{
+        width: 490px;
+        min-height: 200px;
+      }
+    }
+  }
+  .mod-form-submit{
+    border: none;
+    font-size: $baseFontSize_M;
+    padding: 20px 10px 10px 10px;
+    background: none;
+    width: 670px;
+    .mod-form-submit-button{
+      text-align: center;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-step-flow-03
+-------------------*/
+.mod-step-flow-03 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    margin-top: 20px;
+    padding-top: 40px;
+    background: url(img/mod-step/arw_down_gray_grade.jpg) center top no-repeat;
+    &.step1 {
+      margin-top: 0;
+      padding-top: 0;
+      background: none;
+    }
+    .mod-box{
+      width: $baseMainWidth - 100;
+      padding-left: 100px;
+      &.step1 {background: url(img/mod-step/ico_step_01.png) left top no-repeat;}
+      &.step2 {background: url(img/mod-step/ico_step_02.png) left top no-repeat;}
+      &.step3 {background: url(img/mod-step/ico_step_03.png) left top no-repeat;}
+      &.step4 {background: url(img/mod-step/ico_step_04.png) left top no-repeat;}
+      &.step5 {background: url(img/mod-step/ico_step_05.png) left top no-repeat;}
+      &.step6 {background: url(img/mod-step/ico_step_06.png) left top no-repeat;}
+      &.step7 {background: url(img/mod-step/ico_step_07.png) left top no-repeat;}
+      &.step8 {background: url(img/mod-step/ico_step_08.png) left top no-repeat;}
+      &.step9 {background: url(img/mod-step/ico_step_09.png) left top no-repeat;}
+      &.step10 {background: url(img/mod-step/ico_step_10.png) left top no-repeat;}
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-toppage
+-------------------*/
+.mod-toppage{
+  width: 980px;
+  margin: 0 auto;
+  .mod-toppage-inner{
+    background: #3c66ba url(img/area-main/arr.png) 12px 6px no-repeat;
+    float: right;
+    font-size: $baseFontSize_S;
+    padding: 2px 15px 2px 30px;
+    margin-top: -25px;
+      /*角丸設定*/
+
+    border-top-left-radius: 5px;       /* CSS3 */
+    border-top-right-radius: 5px;       /* CSS3 */
+    -moz-border-radius-topleft: 5px;    /*firefox用*/
+    -moz-border-radius-topright: 5px;   /*firefox用*/
+    -webkit-border-top-left-radius: 5px;    /* Safari,Google Chrome用 */
+    -webkit-border-top-right-radius: 5px;    /* Safari,Google Chrome用 */
+    a{
+      color: #ffffff;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-toppage-cv01
+-------------------*/
+.mod-toppage-cv01{
+  width: 980px;
+  margin: 0 auto;
+  .mod-toppage-inner{
+    background: $sideLinkHover_G url(img/area-main-cv01/arr.png) 12px 6px no-repeat;
+    float: right;
+    font-size: $baseFontSize_S;
+    padding: 2px 15px 2px 30px;
+    margin-top: -25px;
+      /*角丸設定*/
+
+    border-top-left-radius: 5px;       /* CSS3 */
+    border-top-right-radius: 5px;       /* CSS3 */
+    -moz-border-radius-topleft: 5px;    /*firefox用*/
+    -moz-border-radius-topright: 5px;   /*firefox用*/
+    -webkit-border-top-left-radius: 5px;    /* Safari,Google Chrome用 */
+    -webkit-border-top-right-radius: 5px;    /* Safari,Google Chrome用 */
+    a{
+      color: #ffffff;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-step-flow-04
+-------------------*/
+.mod-step-flow-04 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    float: left;
+    width: 159px;
+    padding-left: 31px;
+    background: url(img/mod-arr/arr_big_r.png) 10px center no-repeat;
+    &.step1 {
+      padding-left: 0;
+      background: none;
+    }
+    .mod-box{
+      width: 162px;
+      padding-top: 23px;
+      &.step1 {background: url(img/mod-step/mod-step-flow-04/ico_step02_01.png) center top no-repeat #ff9000;}
+      &.step2 {background: url(img/mod-step/mod-step-flow-04/ico_step02_02.png) center top no-repeat #ff9000;}
+      &.step3 {background: url(img/mod-step/mod-step-flow-04/ico_step02_03.png) center top no-repeat #ff9000;}
+      &.step4 {background: url(img/mod-step/mod-step-flow-04/ico_step02_04.png) center top no-repeat #ff9000;}
+      &.step5 {background: url(img/mod-step/mod-step-flow-04/ico_step02_05.png) center top no-repeat #ff9000;}
+      &.step6 {background: url(img/mod-step/mod-step-flow-04/ico_step02_06.png) center top no-repeat #ff9000;}
+      &.step7 {background: url(img/mod-step/mod-step-flow-04/ico_step02_07.png) center top no-repeat #ff9000;}
+      &.step8 {background: url(img/mod-step/mod-step-flow-04/ico_step02_08.png) center top no-repeat #ff9000;}
+      &.step9 {background: url(img/mod-step/mod-step-flow-04/ico_step02_09.png) center top no-repeat #ff9000;}
+      &.step10 {background: url(img/mod-step/mod-step-flow-04/ico_step02_10.png) center top no-repeat #ff9000;}
+      .mod-box-inner{
+        padding-top: 10px;
+        background: #ffffff;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-bookmark
+-------------------*/
+.mod-bookmark{
+  input{
+    background: url(img/mod-bnr/bnr.png) left top no-repeat;
+    border: none;
+    color: #ffffff;
+    font-size: $baseFontSize_S + 1;
+    font-weight: bold;
+    height: 42px;
+    width: 197px;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-step-flow-05
+-------------------*/
+.mod-step-flow-05 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    float: left;
+    width: 166px;
+    padding-left: 22px;
+    background: url(img/mod-step/arr_0094_01.png) 10px center no-repeat;
+    &.step1 {
+      padding-left: 0;
+      background: none;
+    }
+    &.step5 {
+      padding-left: 0;
+      background: none;
+      clear: both;
+    }
+    .mod-box{
+      width: 162px;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-step-flow-06
+-------------------*/
+.mod-step-flow-06 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    float: left;
+    width: 162px;
+    padding-left: 31px;
+    background: url(img/mod-step/arr_0094_01.png) 10px center no-repeat;
+    &.step1 {
+      padding-left: 0;
+      background: none;
+    }
+    &.step5 {
+      padding-left: 0;
+      background: none;
+    }
+    .mod-box{
+      width: 162px;
+      .sibl3-inner{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+/* ------------------
+★★ .mod-step-flow-07
+-------------------*/
+.mod-step-flow-07 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    background: url(img/mod-step/arw_down_gray_grade.jpg) center 10px no-repeat;
+    padding: 40px 0 0 0;
+    .mod-box4{
+      .sibl{
+        background: none;
+        text-align: center;
+        padding: 5px;
+      }
+      .mod-box-inner {
+        padding-top: 10px;
+        background: $BoxBGColor;
+        border-bottom: 1px solid $BorderColor;
+        text-align: center;
+      }
+    }
+  }
+  & .step1 {
+    .mod-step-flow-inner {
+      padding-left: 0;
+      background: none;
+    }
+  }
+  &.step2 {}
+  &.step3 {}
+  &.step4 {}
+  &.step5 {}
+  &.step6 {}
+  &.step7 {}
+  &.step8 {}
+  &.step9 {}
+  &.step10 {}
+}
+
+
+/* ------------------
+★★ .mod-step-flow-07
+-------------------*/
+.mod-step-flow-07 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    background: url(img/mod-step/arw_down_gray_grade.jpg) center 10px no-repeat;
+    padding: 40px 0 0 0;
+    .mod-box4{
+      .sibl{
+        background: none;
+        text-align: center;
+        padding: 5px;
+      }
+      .mod-box-inner {
+        padding-top: 10px;
+        background: $BoxBGColor;
+        border-bottom: 1px solid $BorderColor;
+        text-align: center;
+      }
+    }
+  }
+  & .step1 {
+    .mod-step-flow-inner {
+      padding-left: 0;
+      background: none;
+    }
+  }
+  &.step2 {}
+  &.step3 {}
+  &.step4 {}
+  &.step5 {}
+  &.step6 {}
+  &.step7 {}
+  &.step8 {}
+  &.step9 {}
+  &.step10 {}
+}
+
+/* ------------------------
+★★ .mod-side-nav
+class名を　mod-side-menu　にすると、自動生成されるメニューになってしまうため、navとして対応
+------------------------ */
+.mod-side-nav {
+  background: #ffffff;
+  .mod-side-nav-inner{
+    background: #503B1E;
+    color: #ffffff;
+    padding: 5px;
+    p{
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .mod-side-nav-inner2{
+    border-bottom: 5px solid #503B1E;
+    border-right: 1px solid #503B1E;
+    border-left: 1px solid #503B1E;
+    padding: 5px 0;
+    .mod-2col-1b{
+      width: $baseSideWidth - 10;
+      .mod-col{
+        width: 70px;
+        margin-bottom: 0;
+        .sibl-inner {
+          img{
+            width: 70px;
+          }
+        }
+      }
+      .mod-col2 {
+        width: 125px;
+        p{
+          height: 50px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+*:first-child + html div.mod-side-nav-inner2 .mod-2col-1b .mod-col2 p{
+  /* IE 7 */
+  height: auto;
+  display: inline;
+  zoom: 1;
+}
+
+
+/* ------------------
+★★ .mod-hours
+-------------------*/
+.mod-hours {
+  .mod-hours-inner {}
+  .mod-hours-inner2 {
+    table{
+      border-spacing : 0;
+      border-collapse: collapse;
+      font-size: $baseFontSize_M + 1;
+      width: 100%;
+      background: url("img/area-main/mod-hours/bg.png") no-repeat left top #4774e4;
+      thead{
+        tr{
+          th{
+            border: 1px solid $BorderColor;
+            padding: 8px 15px;
+            color: #ffffff;
+            border-spacing : 0;
+            border-collapse: collapse;
+            text-align: center;
+            text-shadow: -1px -1px #333333;
+          }
+        }
+      }
+      tbody{
+        th{
+          background: #ffffff;
+          border-spacing : 0;
+          border-collapse: collapse;
+          font-weight: normal;
+          border: 1px solid $BorderColor;
+          padding: 12px 15px 12px 25px;
+          width: 30%;
+        }
+        td{
+          width: 10%;
+          background: #ffffff;
+          border: 1px solid $BorderColor;
+          padding: 12px;
+          border-spacing : 0;
+          border-collapse: collapse;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .mod-hours-inner3 {
+    ul {
+      padding-left: 0;
+      li {
+        background: url("img/mod-list/ico02.png") no-repeat left 0;
+        padding: 0 0 0 25px;
+      }
+    }
+  }
+}
+
+
+
+/* ------------------
+★★ .mod-newslist-area2
+-------------------*/
+.mod-newslist-area2 {
+  background: url("img/mod-sub-menu/bg02.png") no-repeat bottom center;
+  padding: 0 0 15px 0;
+  .mod-newslist-area2-inner{
+    background: url("img/mod-sub-box/bg.png") left top no-repeat #133ba9;
+    .sibl{
+      padding: 10px;
+      h2{
+        color: #ffffff;
+        font-size: $baseFontSize_M + 1;
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+  .mod-newslist-area2-inner2{
+    background: $BoxBGColor;
+    border: 1px solid $BorderColor;
+    padding: 10px 8px 15px 8px;
+    .mod-newslist{
+      border: 1px solid $BorderColor;
+      background: #ffffff;
+      overflow: scroll;
+      height: 300px;
+      margin-top: 10px;
+      .mod-newslist-inner{
+        margin-bottom: 10px;
+        dt{
+          margin: 0;
+          padding: 0;
+        }
+        dd{
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-footer-add3
+-------------------*/
+.mod-footer-add3 {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 0px 30px;
+  background: #fbf6e9;
+
+  .mod-footer-add3-inner{
+    float: left;
+    width: 475px;
+
+    .sibl{
+      .sibl-inner{
+        display: table;
+        vertical-align: middle;
+
+       .sibl-inner-i{
+          display: table-cell;
+          vertical-align: middle;
+
+        .mod-image{
+          img{
+            padding-right: 15px;
+            width: 50px;
+          }
+        }
+      }
+      .sibl-inner-i2{
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0px;
+        font-size: $baseFontSize_L + 7;
+        font-weight: bold;
+        color: #f89c24;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+    .sibl2{
+      margin-top: 5px;
+      font-size: $baseFontSize_L - 1;
+      p{
+        margin: 0;
+      }
+    }
+    .sibl3{
+      margin-top: 15px;
+      .mod-hours{
+        table{
+          border-spacing : 0;
+          border-collapse: collapse;
+
+        }
+        .mod-hours-inner{
+          thead{
+            th{
+              padding: 5px;
+              border-spacing : 0;
+              border-collapse: collapse;
+              border: 1px solid #f0eee3;
+              color: #ffffff;
+              font-weight: normal;
+              background: #1f55c1;
+            }
+          }
+          tbody{
+            th{
+              width: 130px;
+              padding: 5px 10px;
+              border: 1px solid #f0eee3;
+              border-spacing : 0;
+              border-collapse: collapse;
+              text-align: left;
+              color: #333333;
+              background: #ffffff;
+              font-weight: normal;
+            }
+            td{
+              width: 48px;
+              border: 1px solid #f0eee3;
+              border-spacing : 0;
+              border-collapse: collapse;
+              text-align: center;
+              background: #ffffff;
+
+            }
+          }
+        }
+      }
+      .mod-hours-inner2{
+        margin: 10px 0 0;
+        p{
+          margin: 0;
+        }
+      }
+    }
+    .sibl4{
+      margin-top: 15px;
+      .sibl4-inner{
+       .sibl4-inner-i{
+          display: table-cell;
+          padding: 0 10px 0 0;
+          vertical-align: bottom;
+          .mod-image{
+            width: 80px;
+            img{
+              width: 80px;
+            }
+          }
+        }
+        .sibl4-inner-i2{
+          display: table-cell;
+          vertical-align: bottom;
+          p{
+            font-size: $baseFontSize_L;
+            margin: 0;
+          }
+          .mod-tel{
+            padding: 0 0 0 43px;
+            background: url(img/mod-tel/ico.png) no-repeat left 3px;
+            p{
+            font-size: $baseFontSize_L + 25;
+            line-height: 1.1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mod-footer-add3-inner2{
+    float: right;
+    width: 475px;
+    .sibl{
+      margin:0 0 10px 0;
+      img{
+        width: 470px;
+      }
+      a{
+        background: url("img/mod-sub-menu/arr.png") no-repeat 10px center #ffffff;
+        border-right: 1px solid #b2b2b2;
+        border-bottom: 1px solid #b2b2b2;
+        border-radius: 3px;        /* CSS3草案 */
+        -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+        -moz-border-radius: 3px;   /* Firefox用 */
+        color: #2f141c;
+        display: block;
+        font-size: $baseFontSize_M - 1;
+        padding: 8px 0 5px 25px;
+        margin: 10px 0 0 0;
+        text-align: left;
+        width: 165px;
+      }
+    }
+    .sibl2{}
+  }
+}
+
+*:first-child+html .mod-footer-add3 .mod-footer-add3-inner .sibl .sibl-inner,
+*:first-child+html .mod-footer-add3 .mod-footer-add3-inner .sibl .sibl-inner .sibl-inner-i,
+*:first-child+html .mod-footer-add3 .mod-footer-add3-inner .sibl .sibl-inner .sibl-inner-i2{ /* IE 7 */
+  display: inline;
+  zoom: 1;
+}
+
+/* ------------------
+★★ .mod-footer-add3-cv01（緑）
+-------------------*/
+.mod-footer-add3-cv01 {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 0px 30px;
+  background: #fbf6e9;
+
+  .mod-footer-add3-inner{
+    float: left;
+    width: 475px;
+
+    .sibl{
+      .sibl-inner{
+        display: table;
+        vertical-align: middle;
+
+       .sibl-inner-i{
+          display: table-cell;
+          vertical-align: middle;
+
+        .mod-image{
+          img{
+            padding-right: 15px;
+            width: 50px;
+          }
+        }
+      }
+      .sibl-inner-i2{
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0px;
+        font-size: $baseFontSize_L + 7;
+        font-weight: bold;
+        color: #f89c24;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+    .sibl2{
+      margin-top: 5px;
+      font-size: $baseFontSize_L - 1;
+      p{
+        margin: 0;
+      }
+    }
+    .sibl3{
+      margin-top: 15px;
+      .mod-hours{
+        table{
+          border-spacing : 0;
+          border-collapse: collapse;
+
+        }
+        .mod-hours-inner{
+          thead{
+            th{
+              padding: 5px;
+              border-spacing : 0;
+              border-collapse: collapse;
+              border: 1px solid #f0eee3;
+              color: #ffffff;
+              font-weight: normal;
+              background: $sideLinkHover_G;
+            }
+          }
+          tbody{
+            th{
+              width: 130px;
+              padding: 5px 10px;
+              border: 1px solid #f0eee3;
+              border-spacing : 0;
+              border-collapse: collapse;
+              text-align: left;
+              color: #333333;
+              background: #ffffff;
+              font-weight: normal;
+            }
+            td{
+              width: 48px;
+              border: 1px solid #f0eee3;
+              border-spacing : 0;
+              border-collapse: collapse;
+              text-align: center;
+              background: #ffffff;
+
+            }
+          }
+        }
+      }
+      .mod-hours-inner2{
+        margin: 10px 0 0;
+        p{
+          margin: 0;
+        }
+      }
+    }
+    .sibl4{
+      margin-top: 15px;
+      .sibl4-inner{
+       .sibl4-inner-i{
+          display: table-cell;
+          padding: 0 10px 0 0;
+          vertical-align: bottom;
+          .mod-image{
+            width: 80px;
+            img{
+              width: 80px;
+            }
+          }
+        }
+        .sibl4-inner-i2{
+          display: table-cell;
+          vertical-align: bottom;
+          p{
+            font-size: $baseFontSize_L;
+            margin: 0;
+          }
+          .mod-tel{
+            padding: 0 0 0 43px;
+            background: url(img/mod-tel/ico.png) no-repeat left 3px;
+            p{
+            font-size: $baseFontSize_L + 25;
+            line-height: 1.1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mod-footer-add3-inner2{
+    float: right;
+    width: 475px;
+    .sibl{
+      margin:0 0 10px 0;
+      img{
+        width: 470px;
+      }
+      a{
+        background: url("img/mod-sub-menu/arr.png") no-repeat 10px center #ffffff;
+        border-right: 1px solid #b2b2b2;
+        border-bottom: 1px solid #b2b2b2;
+        border-radius: 3px;        /* CSS3草案 */
+        -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+        -moz-border-radius: 3px;   /* Firefox用 */
+        color: #2f141c;
+        display: block;
+        font-size: $baseFontSize_M - 1;
+        padding: 8px 0 5px 25px;
+        margin: 10px 0 0 0;
+        text-align: left;
+        width: 165px;
+      }
+    }
+    .sibl2{}
+  }
+}
+
+*:first-child+html .mod-footer-add3 .mod-footer-add3-inner .sibl .sibl-inner,
+*:first-child+html .mod-footer-add3 .mod-footer-add3-inner .sibl .sibl-inner .sibl-inner-i,
+*:first-child+html .mod-footer-add3 .mod-footer-add3-inner .sibl .sibl-inner .sibl-inner-i2{ /* IE 7 */
+  display: inline;
+  zoom: 1;
+}
+
+/* ------------------
+★★ .mod-copyright
+-------------------*/
+.mod-copyright{
+  background: #ffffff;
+  .mod-copyright-inner{
+    p{
+      margin: 0;
+      padding: 5px 0;
+      font-size: $baseFontSize_S;
+      text-align: center;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-step-point
+-------------------*/
+.mod-step-point {
+  width: $baseMainWidth;
+  margin: auto;
+  .mod-step-point-inner {
+    float: left;
+    width: 236px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    border-right: 1px solid #dedad1;
+    border-left: 1px solid #dedad1;
+    border-bottom: 1px solid #dedad1;
+    background-color: #fffdf5;
+
+    .sibl-inner{
+      height: 50px;
+      padding: 4px 0 0 45px;
+      line-height: 1.3;
+      p{
+        font-size: $baseFontSize_M + 1;
+        margin: 3px 0 0 0;
+      }
+    }
+    .sib2-inner {
+      color: $baseFontColor;
+      padding: 10px 5px 0 5px;
+      p {
+        font-size: $baseFontSize_M;
+      }
+      img {
+        width: 218px;
+      }
+    }
+  }
+
+  /*カラー設定*/
+  $color1: #eb7272;
+  $color2: #98bf46;
+  $color3: #f0b018;
+  $color4: #61bfca;
+  $color5: #d272b6;
+  $color6: #5b8ad7;
+
+  .step1 {.sibl-inner {background: url(img/mod-step/ico-step-001.png) no-repeat 7px 0px #fffdf5; border-top: 3px solid $color1; color: $color1; }}
+  .step2 {.sibl-inner {background: url(img/mod-step/ico-step-002.png) no-repeat 7px 0px #fffdf5; border-top: 3px solid $color2; color: $color2; }}
+  .step3 {.sibl-inner {background: url(img/mod-step/ico-step-003.png) no-repeat 7px 0px #fffdf5; border-top: 3px solid $color3; color: $color3; }}
+  .step4 {.sibl-inner {background: url(img/mod-step/ico-step-004.png) no-repeat 7px 0px #fffdf5; border-top: 3px solid $color4; color: $color4; }}
+  .step5 {.sibl-inner {background: url(img/mod-step/ico-step-005.png) no-repeat 7px 0px #fffdf5; border-top: 3px solid $color5; color: $color5; }}
+  .step6 {.sibl-inner {background: url(img/mod-step/ico-step-006.png) no-repeat 7px 0px #fffdf5; border-top: 3px solid $color6; color: $color6; }}
+
+  .step4 {
+    clear:both;
+  }
+  .step1 {
+    margin-left: 0;
+  }
+  .step4 {
+    margin-left: 0;
+  }
+}
+
+
+
+/* ------------------------
+★★ .mod-side-bnr
+------------------------ */
+.mod-side-bnr {
+  padding: 0 0 5px;
+  border-top: 3px solid #6085d0;
+  background: url("img/mod-sub-bnr/bg02.png") no-repeat left bottom;
+
+  .mod-side-bnr-inner{
+    background: #f1f8ff url("img/mod-sub-bnr/bg.png") repeat-x top left;
+
+    border-bottom: 1px solid #dedad1;
+    border-right: 1px solid #dedad1;
+    border-left: 1px solid #dedad1;
+
+
+    .mod-side-bnr-inner-i{
+      position: relative;
+      border: 1px solid #ffffff;
+      color: #410709;
+      .mod-side-bnr-inner-i-i{
+        p{
+          margin: 0;
+          background: url("img/mod-arr/arr.png") no-repeat 3px 48%;
+        }
+        a{
+          display: inline-block;
+          *display: inline;
+          *zoom: 1;
+          width: 120px;
+          padding: 20px 76px 20px 20px;
+          color: #410709;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+      .mod-side-bnr-inner-i-i2{
+        position: absolute;
+        top: 6px;
+        right: 3px;
+        .mod-image{
+          img{
+            width: 70px;
+            height: 50px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+*:first-child+html div.mod-side-bnr-inner-i-i {
+  display: inline;
+  zoom: 1;
+}
+
+
+*:first-child+html  .mod-side-bnr-inner-i-i2 {
+  display: inline;
+  zoom: 1;
+}
+
+*:first-child+html  .mod-side-bnr-inner-i-i2 img{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ------------------
+★★ .mod-newslist
+-------------------*/
+
+.mod-newslist {
+  .mod-newslist-inner {
+    margin: 0 0 15px 0;
+    dl {
+      margin: 0;
+      dt {
+        display:table-cell;
+        float: left;
+        width: 105px;
+        margin: 0 15px 0 0;
+        padding: 2px 2px 1px 2px;
+        border-radius: 4px;        /* CSS3草案 */
+        -webkit-border-radius: 4px;    /* Safari,Google Chrome用 */
+        -moz-border-radius: 4px;   /* Firefox用 */
+        color: #ffffff;
+        font-size: $baseFontSize_M - 1;
+        text-align: center;
+        background: #ee8585;
+      }
+      dd {
+        display:table-cell;
+        float:left;
+        width: $baseMainWidth - 124;
+        margin: 0;
+        padding-top: 2px;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-side-inquiry-1c
+-------------------*/
+.mod-side-inquiry-1c {
+  background: url("img/mod-sub-box/bg02.png") no-repeat bottom center;
+  padding: 0 0 15px 0;
+  .mod-side-inquiry-1c-inner{
+    background: url("img/mod-sub-box/bg.png") left top no-repeat;
+    .sibl{
+      padding:5px 10px 3px 10px;
+      h3{
+        color: #ffffff;
+        font-size: $baseFontSize_L;
+        margin: 0;
+        text-shadow: 1px 1px 0 #091a46;
+      }
+    }
+  }
+  .mod-side-inquiry-1c-inner2{
+    background: $BoxBGColor;
+    border: 1px solid $BorderColor;
+    padding: 10px 8px 15px 8px;
+    .sibl{
+      background: #ffffff;
+      padding: 10px 10px;
+      .mod-logo{
+        text-align: center;
+        img{
+          width: 35px;
+        }
+      }
+      .sibl-inner{
+        text-align: center;
+        p{
+        color: #f89c24;
+        font-size: $baseFontSize_L + 4;
+        font-weight: bold;
+        }
+      }
+      .sibl-inner2{}
+      .sibl-inner3{
+        .mod-tel-inner{
+          background: url(img/mod-tel/ico02.png) left top no-repeat;
+          p{
+            color: #e96666;
+            font-size: $baseFontSize_L + 3;
+            font-weight: normal;
+            margin: 0;
+            padding: 2px 0 2px 27px;
+          }
+        }
+      }
+      .sibl-inner4{
+        .mod-accessbox{
+          margin: 10px auto 0;
+          img{
+            width: 180px;
+          }
+          a{
+            background: url("img/mod-sub-menu/arr.png") no-repeat left 15px #ffffff;
+            color: #2f141c;
+            font-size: $baseFontSize_M - 1;
+            padding: 10px 0 10px 15px;
+            margin: 10px 0 0 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-career
+-------------------*/
+.mod-career{
+  .mod-career-inner{
+    tbody{
+      th{
+       background: #ffffff;
+       border: none;
+       border-spacing : 0;
+       border-collapse: collapse;
+       color: #333333;
+       font-weight: normal;
+       padding: 7px 35px 8px 0px;
+      }
+      td{
+       background: #ffffff;
+       border: none;
+       padding: 7px 25px 8px 0px;
+       border-spacing : 0;
+       border-collapse: collapse;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-titel
+-------------------*/
+.mod-titlebox {
+  text-align: right;
+  background: url("img/area-header/bg02.png") no-repeat center top #ffffff;
+  .mod-titlebox-inner {
+    width: 980px;
+    min-height: 200px;
+    margin: auto;
+    .sibl{
+      padding:55px 0;
+      h1{
+        color: #063ca9;
+        font-size: $baseFontSize_M + 15;
+        font-weight: normal;
+        text-shadow: 1px 1px 2px #ffffff;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-info
+-------------------*/
+.mod-info{
+  .mod-info-inner{
+    .mod-2col-1f-3{
+      .mod-col{}
+      .mod-col2{
+        .sibl-inner{
+          table{
+            tr{
+            }
+            th{
+              text-align: center;
+              vertical-align: top;
+              width: 80px;
+              p{
+                background: #1f55c1;
+                border-radius: 3px;        /* CSS3草案 */
+                -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+                -moz-border-radius: 3px;   /* Firefox用 */
+                color: #ffffff;
+                font-weight: normal;
+                margin: 2px 0 0;
+                padding: 0 8px;
+              }
+            }
+            td{
+              padding: 0 5px 30px 15px;
+              vertical-align: top;
+              font-size: $baseFontSize_M + 1;
+              p{
+                margin: 0;
+              }
+            }
+            .info-name{
+              color: #3c0103;
+              font-size: $baseFontSize_L + 4;
+            }
+            .mod-tel-inner{
+              background: url("img/mod-tel/ico02.png") no-repeat left 3px;
+              padding-left: 35px;
+
+              p{
+                color: #f08a8a;
+                font-size: $baseFontSize_L + 7;
+                font-weight: normal;
+                text-align: left;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-step-flow-08
+-------------------*/
+.mod-step-flow-08 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    margin-top: 30px;
+    padding-top: 55px;
+    background: url(img/mod-step/arr.png) center top no-repeat;
+    &.step1 {
+      margin-top: 0;
+      padding-top: 0;
+      background: none;
+    }
+    .mod-box {
+    width: $baseMainWidth - 22;
+    padding: 10px;
+    border: 1px solid #a8d0f6;
+    border-radius: 5px;
+    background: #e6f8ff;
+    margin-right: 0;
+    }
+    .mod-box-inner {
+      background: #ffffff;
+      padding: 0 15px;
+        .mod-box-flowbox{
+          position: relative;
+          top: -18px;
+          left: 0;
+          & .step1 {background: url(img/mod-step/mod-step-flow-08/ico-step-001.png) left top no-repeat;}
+          & .step2 {background: url(img/mod-step/mod-step-flow-08/ico-step-002.png) left top no-repeat;}
+          & .step3 {background: url(img/mod-step/mod-step-flow-08/ico-step-003.png) left top no-repeat;}
+          & .step4 {background: url(img/mod-step/mod-step-flow-08/ico-step-004.png) left top no-repeat;}
+          & .step5 {background: url(img/mod-step/mod-step-flow-08/ico-step-005.png) left top no-repeat;}
+          & .step6 {background: url(img/mod-step/mod-step-flow-08/ico-step-006.png) left top no-repeat;}
+          & .step7 {background: url(img/mod-step/mod-step-flow-08/ico-step-007.png) left top no-repeat;}
+          & .step8 {background: url(img/mod-step/mod-step-flow-08/ico-step-008.png) left top no-repeat;}
+          & .step9 {background: url(img/mod-step/mod-step-flow-08/ico-step-009.png) left top no-repeat;}
+          & .step10 {background: url(img/mod-step/mod-step-flow-08/ico-step-010.png) left top no-repeat;}
+        }
+        .mod-box-flowbox-inner {
+        padding: 20px 0 8px;
+          h3{
+            color: #2588c9;
+            border-bottom: 1px solid #eeeeee;
+            font-size: $baseFontSize_L + 2;
+            margin: 5px 20px 5px 87px;
+            padding: 0;
+          }
+        }
+        .mod-box-flowbox-inner2 {
+          .mod-2col-1f-2{
+            width: $baseMainWidth - 52;
+            .mod-col2{
+              width: $baseMainWidth - 267;
+            }
+          }
+        }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-accessbox2
+-------------------*/
+.mod-accessbox2{
+  .mod-accessbox2-inner{
+      margin: 0 0 25px;
+    a{
+      background: url("img/mod-sub-menu/arr.png") no-repeat 10px 15px #ffffff;
+      border-right: 1px solid #b2b2b2;
+      border-bottom: 1px solid #b2b2b2;
+      border-radius: 3px;        /* CSS3草案 */
+      -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+      -moz-border-radius: 3px;   /* Firefox用 */
+      color: #2f141c;
+      display: block;
+      font-size: $baseFontSize_M - 1;
+      padding: 10px 0 10px 30px;
+      margin: 0;
+      text-align: left;
+      width: 200px;
+    }
+  }
+  .mod-accessbox2-inner2{
+    p{
+      margin: 0;
+    }
+    .sibl{
+      margin: 0 0 30px 0;
+      h4{
+        background: url("img/area-main/mod-accessbox2/ico.png") no-repeat left 2px;
+        color: #f8a232;
+        font-size: $baseFontSize_L;
+        margin: 0 0 10px 0;
+        padding: 2px 0 0 50px;
+      }
+    }
+    .sibl2{
+      margin: 0 0 30px 0;
+      h4{
+        background: url("img/area-main/mod-accessbox2/ico02.png") no-repeat left 2px;
+        color: #f8a232;
+        font-size: $baseFontSize_L;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 50px;
+      }
+    }
+  }
+}
+
+
+/* mod-2col-1b-3 　写真の幅違い　300px*/
+.mod-2col-1b-3 {
+  margin: 0 auto;
+
+  .mod-col {
+    width: 300px;
+    float: right;
+    margin : 0 0 0 15px;
+
+    img {
+      width: 300px;
+    }
+  }
+  .mod-col2 {
+    overflow: hidden;
+  }
+
+}
+
+
+/* ------------------
+★★ .mod-staff
+-------------------*/
+.mod-staff {
+  width: $baseMainWidth - 22;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border: 1px solid #a8d0f6;
+  border-radius: 5px;
+  background: #e6f8ff;
+  .mod-staff-inner {
+    background: #ffffff;
+    padding: 15px 15px 15px 15px;
+    .mod-2col-1a-2{
+      .mod-col2{
+        width: $baseMainWidth - 272;
+        .sibl-inner{}
+        .sibl2-inner{
+          .sibl2-inner-i{
+            p{
+              color: #f2c72a;
+              font-size: $baseFontSize_L;
+              font-weight: bold;
+            }
+          }
+          .sibl2-inner-i2{
+            margin-bottom: 20px;
+          }
+        }
+        .sibl3-inner{
+          background: url("img/area-main/mod-staff/bg-top.png") no-repeat top left #fff5db;
+          .sibl3-inner-i{
+            padding: 15px 10px 10px 10px;
+            background: url("img/area-main/mod-staff/bg-bottom.png") no-repeat right bottom;
+            .sibl3-inner-i2{
+              .mod-h5{
+                margin-bottom: 0;
+                .mod-h-inner{
+                  padding: 3px 0 2px 15px;
+                }
+              }
+            }
+            .sibl3-inner-i3{}
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mod-2col-1a-2 */
+.mod-2col-1a-2 {
+    .mod-col {
+      width: 200px;
+      float: left;
+      margin : 0 15px 15px 0;
+
+      img {
+        width: 200px;
+      }
+    }
+    .mod-col2 {
+      width: $baseMainWidth - 225;
+      float: right;
+    }
+}
+
+/* mod-2col-1a-2a */
+.mod-2col-1a-2a {
+    width: $baseMainWidth;
+    margin: 0 auto;
+
+    .area-side-right & {
+      width: $baseSideWidth;
+      margin: 0 auto;
+    }
+
+    .area-side-left & {
+      width: $baseSideWidth;
+      margin: 0 auto;
+    }
+
+    .mod-col {
+      width: 200px;
+      float: left;
+      margin : 0 15px 15px 0;
+
+      .area-side-right & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+
+      .area-side-left & {
+        width: 90px;
+        float: left;
+        margin : 0 15px 15px 0;
+      }
+
+      img {
+        width: 200px;
+
+        .area-side-right & {
+          width: 90px;
+        }
+        .area-side-left & {
+          width: 90px;
+        }
+      }
+    }
+    .mod-col2 {
+      overflow: hidden;
+
+      .area-side-right & {
+        overflow: hidden;
+      }
+      .area-side-left & {
+        overflow: hidden;
+      }
+      .area-side-right, .area-side-left & {
+        .sibl-inner{
+          .sibl-inner-i{
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            h5{
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+}
+
+/* mod-2col-1d-2 */
+.mod-2col-1d-2 {
+    .mod-col {
+      width: 200px;
+      float: right;
+      margin: 0 0 15px 15px;
+      img {
+        width: 200px;
+      }
+    }
+    .mod-col2 {
+      padding: 0 0 0 0;
+    }
+  }
+
+/* mod-2col-1d-3 */
+.mod-2col-1d-3 {
+    .mod-col {
+      width: 270px;
+      float: right;
+      margin: 0 0 15px 15px;
+      img {
+        width: 270px;
+      }
+    }
+    .mod-col2 {
+      padding: 0 0 0 0;
+      .mod-h2{
+        overflow: hidden;
+      }
+    }
+  }
+
+/* ------------------
+★★ .mod-list-02
+-------------------*/
+.mod-list-02 {
+
+  .sibl-inner {
+    float:left;
+    width:15px;
+  }
+  .sibl2-inner {
+    overflow: hidden;
+    ul {
+      padding-left: 0;
+      li {
+        margin-top: 8px;
+        padding-left:15px;
+        list-style-type: none;
+        background: url("img/mod-h5/bg.png") no-repeat 0 5px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-table-3col
+-------------------*/
+.mod-table-3col {
+  .mod-table-3col-inner {
+    table {
+      td {
+        width: 33%;
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-2col-2row-1b-2
+-------------------*/
+.mod-2col-2row-1b-2 {
+    margin: 0;
+
+    .mod-col {
+      width: 200px;
+      float: right;
+      margin: 0 0 15px 15px;
+
+      img {
+        width: 200px;
+      }
+    }
+    .mod-col2 {
+      overflow: hidden;
+        .sibl-inner {
+          .sibl-inner-i {
+            background: $titleBGColor;
+            color: $titleFontColor;
+            padding: 3px 5px;
+            margin: 0 0 10px;
+            h5 {
+              font-size: $baseFontSize_M + 1;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+        }
+        .sibl2-inner {
+          margin-bottom: 45px;
+        }
+        .sibl4-inner {
+          table {
+            width: 100%;
+            td {
+              width:45%;
+              &:first-child {
+                padding-right:10%;
+              }
+            }
+          }
+        }
+    }
+}
+
+/* ------------------
+★★ .mod-main-table-compare
+-------------------*/
+.mod-main-table-compare {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  table {
+    width: 100%;
+    .col1 {background: #f0f0f0;}
+    .col2 {background: #d0f4ff; text-align: center;}
+    .col3 {background: #e9facf; text-align: center;}
+    th {
+      padding: 10px;
+      border: 1px solid #ffffff;
+      }
+    .th1 {color: #ffffff; background: #bdbdbd;}
+    .th2 {color: #ffffff; background: #41add0;}
+    .th3 {color: #ffffff; background: #88c22b;}
+    td {
+      padding: 10px;
+      border: 1px solid #ffffff;
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-main-heading-faq
+-------------------*/
+.mod-main-heading-faq {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-main-heading-faq-inner {
+    padding: 15px 0 15px 67px;
+    background: url(img/mod-h/bg-faq01.png) left center no-repeat;
+    p {
+      color: #e96666;
+      font-size: $baseFontSize_L + 7;
+    }
+  }
+}
+
+
+/* ------------------------
+★★ .mod-main-bnrbox
+------------------------ */
+.mod-main-bnrbox{
+  .mod-2col-2a{
+    .mod-col, .mod-col2{
+      width: 350px;
+    }
+  }
+}
+
+/* ------------------------
+★★ .mod-main-bnr
+------------------------ */
+.mod-main-bnr {
+  padding: 0 0 7px 0;
+  background: url("img/area-main/mod-main-bnr/bg02.png") no-repeat left bottom;
+
+  .mod-main-bnr-inner{
+    border: 1px solid #d6d1c6;
+    background: #f7eed4 url("img/area-main/mod-main-bnr/bg.png") repeat-x top left;
+
+
+    .mod-main-bnr-inner-i{
+      position: relative;
+      .mod-main-bnr-inner-i-i{
+        p{
+          margin: 0;
+        }
+        .sibl-inner{
+          font-size: $baseFontSize_L - 1;
+          a{
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            width: 223px;
+            min-height: 58px;
+            padding: 20px 100px 20px 15px;
+            color: #ff9101;
+            font-weight: bold;
+          }
+        }
+        .sibl-inner2{
+      display: inline-block;
+
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        background: url("img/mod-arr/arr.png") no-repeat left 4px;
+        padding: 0 0 0 20px;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+      .mod-main-bnr-inner-i-i2{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        .mod-image{
+          img{
+            width: 76px;
+            height: 76px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+*:first-child+html div.mod-main-bnr-inner-i-i {
+  display: inline;
+  zoom: 1;
+}
+
+
+*:first-child+html  .mod-main-bnr-inner-i-i2 {
+  display: inline;
+  zoom: 1;
+}
+
+*:first-child+html  .mod-main-bnr-inner-i-i2 img{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+/* ------------------
+★★ .mod-step-flow-09
+-------------------*/
+.mod-step-flow-09 {
+  margin-right: auto;
+  margin-left: auto;
+  .mod-step-flow-inner {
+    margin-top: 30px;
+    padding-top: 55px;
+    background: url(img/mod-step/arr.png) center top no-repeat;
+    &.step1 {
+      margin-top: 0;
+      padding-top: 20px;
+      background: none;
+    }
+    .mod-box {
+    width: $baseMainWidth - 22;
+    margin-right: 0;
+    padding: 10px;
+    border: 1px solid #a8d0f6;
+    border-radius: 5px;
+    background: #e6f8ff;
+    }
+    .mod-box-inner {
+      background: #ffffff;
+      padding: 15px 15px 15px 20px;
+      & .step1 {background: url(img/mod-step/mod-step-flow-09/ico-step-001.png) left top no-repeat;}
+      & .step2 {background: url(img/mod-step/mod-step-flow-09/ico-step-002.png) left top no-repeat;}
+      & .step3 {background: url(img/mod-step/mod-step-flow-09/ico-step-003.png) left top no-repeat;}
+      & .step4 {background: url(img/mod-step/mod-step-flow-09/ico-step-004.png) left top no-repeat;}
+      & .step5 {background: url(img/mod-step/mod-step-flow-09/ico-step-005.png) left top no-repeat;}
+      & .step6 {background: url(img/mod-step/mod-step-flow-09/ico-step-006.png) left top no-repeat;}
+      & .step7 {background: url(img/mod-step/mod-step-flow-09/ico-step-007.png) left top no-repeat;}
+      & .step8 {background: url(img/mod-step/mod-step-flow-09/ico-step-008.png) left top no-repeat;}
+      & .step9 {background: url(img/mod-step/mod-step-flow-09/ico-step-009.png) left top no-repeat;}
+      & .step10 {background: url(img/mod-step/mod-step-flow-09/ico-step-010.png) left top no-repeat;}
+      .mod-box-flowbox{
+        .mod-box-flowbox-inner {
+          padding: 0 0 15px 37px;
+          h3{
+            padding: 0;
+            margin: 0;
+            color: #3c0103;
+            font-size: $baseFontSize_L - 1;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   .mod-title　ヘッダータイトル3 （green）
+-------------------------------------------------------------------------- */
+
+.mod-titlebar3{
+  border-bottom: 1px solid #ffffff;
+  .sibl-inner{
+    background: url("img/mod-titlebar3/bg.png") repeat-x left top;
+      .sibl-inner2{
+        width: 980px;
+        margin: 0 auto;
+          p{
+            margin: 26px 0 0 0;
+            color: #66907C;
+            font-size: 12px;
+          }
+      }
+  }
+
+  .sibl2-inner{
+    background: url("img/mod-titlebar3/bg2.png") repeat-x left top;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ECF7EF;
+    .sibl-inner2{
+        width: 980px;
+        margin: 0 auto;
+        .sibl-inner3{
+          float: left;
+          margin: 7px 0 5px 0;
+          .sibl-inner4{
+            float: left;
+            .mod-logo{
+              img{
+                width: 50px;
+                margin: 0 10px 0 0;
+              }
+            }
+          }
+          .sibl2-inner4{
+            float: left;
+            max-width: 500px;
+            .sibl-inner5{
+              margin: 0;
+              p{
+                margin: 0;
+                font-size: 12px;
+                color: #8E7B6D;
+              }
+            }
+            .sibl2-inner5{
+              background: url("img/mod-titlebar3/titlebg.png") no-repeat right bottom;
+              padding: 3px 35px 0 0;
+              overflow: hidden;
+              p{
+                line-height: 120%;
+                margin: 0;
+                font-size: 30px;
+                color: #608BEA;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .sibl2-inner3{
+          float: right;
+          margin: 7px 0 5px 0;
+          max-width: 400px;
+          .sibl-inner4{
+            max-width: 160px;
+            float: right;
+            background-color: #F2CD41;
+            .sibl-inner5{
+              text-align: center;
+              background-color: #F2CD41;
+              border: 1px solid #ffffff;
+              margin: 3px;
+              padding: 7px 15px;
+              p{
+                vertical-align: middle;
+               margin: 0;
+               color: #ffffff;
+               font-size: 14px;
+              }
+            }
+          }
+          .sibl2-inner4{
+            float: right;
+            margin: 0 10px 0 0;
+            table{
+              line-height: 100%;
+              border-spacing: 0;
+              border-collapse: collapse;
+              max-width: 230px;
+              tr{
+              }
+              th{
+                vertical-align: top;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                p{
+                  background: #F2CD41;
+                  border-radius: 3px;        /* CSS3草案 */
+                  -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+                  -moz-border-radius: 3px;   /* Firefox用 */
+                  color: #ffffff;
+                  font-weight: normal;
+                  font-size: 12px;
+                  margin: 2px 0;
+                  padding: 2px 5px 1px 5px;
+                }
+              }
+              td{
+                color: #6a9582;
+                font-size: 13px;
+                .mod-tel{
+                  color: #74B299;
+                  font-size: 17px;
+                  font-weight: bold;
+                }
+                p{
+                vertical-align: top;
+                margin: 0;
+                margin-left: 5px;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+}
+
+  /* ------------------
+★★ .mod-step-flow-10
+-------------------*/
+.mod-step-flow-10 {
+  width: $baseMainWidth;
+  margin-right: auto;
+  margin-left: auto;
+  .mod-box8 {
+    .mod-box-inner {
+      padding-top: 60px;
+      background: url(img/mod-step/arr02.png) center top no-repeat;
+      &.step1 {
+        margin-top: 0;
+        padding-top: 0;
+        background: none;
+      }
+      .mod-2col-1a-2a {
+        width: 660px;
+        padding: 15px 15px 0 15px;
+        border-radius: 5px;    /* CSS3草案 */
+        -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */
+        -moz-border-radius: 5px;   /* Firefox用 */
+        background: #ffffff;
+        .mod-col {
+          width: 250px;
+          padding-bottom: 11px;
+          background: url(img/mod-step/mod-step-flow-10/col-bg02.png) left bottom no-repeat;
+          .mod-col-inner {
+            padding: 38px 26px 8px 24px;
+            background: url(img/mod-step/mod-step-flow-10/col-bg01.png) left top no-repeat;
+          }
+        }
+        .mod-col2 {
+            padding-top: 3px;
+          .sibl-inner {
+            margin: 0;
+            padding: 0 0 0 37px;
+            &.step1 {background: url(img/mod-step/mod-step-flow-09/ico-step-001.png) left top no-repeat;}
+            &.step2 {background: url(img/mod-step/mod-step-flow-09/ico-step-002.png) left top no-repeat;}
+            &.step3 {background: url(img/mod-step/mod-step-flow-09/ico-step-003.png) left top no-repeat;}
+            &.step4 {background: url(img/mod-step/mod-step-flow-09/ico-step-004.png) left top no-repeat;}
+            &.step5 {background: url(img/mod-step/mod-step-flow-09/ico-step-005.png) left top no-repeat;}
+            &.step6 {background: url(img/mod-step/mod-step-flow-09/ico-step-006.png) left top no-repeat;}
+            &.step7 {background: url(img/mod-step/mod-step-flow-09/ico-step-007.png) left top no-repeat;}
+            &.step8 {background: url(img/mod-step/mod-step-flow-09/ico-step-008.png) left top no-repeat;}
+            &.step9 {background: url(img/mod-step/mod-step-flow-09/ico-step-009.png) left top no-repeat;}
+            &.step10 {background: url(img/mod-step/mod-step-flow-09/ico-step-010.png) left top no-repeat;}
+            h3 {
+              margin: 0;
+              padding: 0;
+              color: #ea7f7f;
+              font-weight: bold;
+              font-size: $baseFontSize_L + 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ------------------
+★★ .mod-list-03
+-------------------*/
+.mod-list-03 {
+  .sibl-inner {
+    float:left;
+    width:20px;
+  }
+  .sibl2-inner {
+    overflow: hidden;
+    ul {
+      padding-left: 0;
+      li {
+        margin-top: 5px;
+        padding:1px 0 0 28px;
+        color: #e96666;
+        font-weight: bold;
+        font-size: 16px;
+        list-style-type: none;
+        background: url("img/mod-list/ico03.png") no-repeat 0 0;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------
+★★ .mod-list-04
+-------------------*/
+.mod-list-04 {
+  .sibl-inner {
+    float:left;
+    width:20px;
+  }
+  .sibl2-inner {
+    overflow: hidden;
+    ul {
+      padding-left: 0;
+      li {
+        margin-top: 5px;
+        padding:1px 0 0 28px;
+        color: #2c89d5;
+        font-weight: bold;
+        font-size: 16px;
+        list-style-type: none;
+        background: url("img/mod-list/ico04.png") no-repeat 0 0;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* ------------------
+★★ .mod-list-04
+-------------------*/
